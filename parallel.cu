@@ -9,11 +9,12 @@ using namespace std;
 
 __device__ __host__
 int mIndex(int i, int j, int n, int m) {
-  return i*m + j;
+    return i*m + j;
 }
 
-int factorial(int n) {
-    return tgamma(n + 1);
+double factorial(int n) {
+    double x = n + 1;
+    return tgamma(x);
 }
 
 void printOrders(int* orders, int numCustomers, int numProducts) {
@@ -133,7 +134,7 @@ void bruteForceSolve(int* orders,
     checkOk(cudaMemcpy(orders_d, orders, sizeOrders, cudaMemcpyHostToDevice));
 
     int* stackSizes_d;
-    int numSequences = factorial(numProducts);
+    double numSequences = factorial(numProducts);
     int sizeStacksSizes = NUM_BLOCKS * sizeof(int);
     checkOk(cudaMalloc((void**) &stackSizes_d, sizeStacksSizes));
 
@@ -210,7 +211,7 @@ int main(int argc, char** argv) {
     int numCustomers, numProducts;
     int* orders;
 
-    string input;
+    char* input;
     if (argc > 1) {
         input = argv[1];
     } else {
@@ -240,3 +241,4 @@ int main(int argc, char** argv) {
     bruteForceSolve(orders, numCustomers, numProducts);
     return 0;
 }
+
