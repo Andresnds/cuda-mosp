@@ -3,6 +3,8 @@
 #include <fstream>
 #include <string>
 
+#define NUM_BLOCKS 65535
+
 using namespace std;
 
 __device__ __host__
@@ -104,9 +106,10 @@ __global__
 void calculateMaximumOpenStacks(int* stackSizes,
                                 int* orders,
                                 int numCustomers,
-                                int numProducts) {
+                                int numProducts,
+                                int step) {
     int* sequence = (int*) malloc(numProducts * sizeof(int));
-    generateSequence(sequence, blockIdx.x, numProducts);
+    generateSequence(sequence, step * NUM_BLOCKS + blockIdx.x, numProducts);
     stackSizes[blockIdx.x] = maximumOpenStacks(sequence,
                                                orders,
                                                numCustomers,
@@ -131,36 +134,53 @@ void bruteForceSolve(int* orders,
 
     int* stackSizes_d;
     int numSequences = factorial(numProducts);
-    int sizeStacksSizes = numSequences * sizeof(int);
+    int sizeStacksSizes = NUM_BLOCKS * sizeof(int);
     checkOk(cudaMalloc((void**) &stackSizes_d, sizeStacksSizes));
 
-    // Calculating maximum stack for each one of them
-    calculateMaximumOpenStacks<<<numSequences, 1>>>(stackSizes_d,
-                                                    orders_d,
-                                                    numCustomers,
-                                                    numProducts);
+    cout << "numSequences: " << numSequences << endl;
 
     int* stackSizes = (int*) malloc(sizeStacksSizes);
-    checkOk(cudaMemcpy(stackSizes,
-                       stackSizes_d,
-                       sizeStacksSizes,
-                       cudaMemcpyDeviceToHost));
+    int minStacks = numCustomers + 1;
+    int bestK = -1;
+    for (int i = 0; i < ceil(numSequences/NUM_BLOCKS); i++) {
+        int numSequencesToProcess;
+        if (numSequences - i * NUM_BLOCKS >= NUM_BLOCKS)
+            numSequencesToProcess = NUM_BLOCKS;
+        else
+            numSequencesToProcess = numSequences - i * NUM_BLOCKS;
+
+        cout << "Step " << i << ". Calculating " << numSequencesToProcess
+             << " More " << numSequences - i * NUM_BLOCKS << " to go." << endl;
+
+        // Calculating maximum stack for each one of them
+        calculateMaximumOpenStacks<<<numSequencesToProcess, 1>>>(stackSizes_d,
+                                                                 orders_d,
+                                                                 numCustomers,
+                                                                 numProducts,
+                                                                 i);
+
+        checkOk(cudaMemcpy(stackSizes,
+                           stackSizes_d,
+                           sizeStacksSizes,
+                           cudaMemcpyDeviceToHost));
+
+        // Calculate the global minimum
+        for (int j = 0; j < numSequencesToProcess; j++) {
+            if (stackSizes[j] < minStacks) {
+                minStacks = stackSizes[j];
+                bestK = j + i * NUM_BLOCKS;
+            }
+        }
+    }
 
     checkOk(cudaFree(orders_d));
     checkOk(cudaFree(stackSizes_d));
 
-    // Calculate the global minimum
-    int minStacks = numCustomers + 1;
-    int bestK = -1;
-    for (int i = 0; i < numSequences; i++) {
-        if (stackSizes[i] < minStacks) {
-            minStacks = stackSizes[i];
-            bestK = i;
-        }
-    }
-    cout << "minStacks: " << minStacks << endl;
+    free(stackSizes);
 
     // Debugging output
+
+    cout << "minStacks: " << minStacks << endl;
 
     // Print sequence
     int* sequence = (int*) malloc(numProducts * sizeof(int));
@@ -179,9 +199,6 @@ void bruteForceSolve(int* orders,
 
     free(sequence);
     // End of debugging code
-
-
-    free(stackSizes);
 }
 
 void dpSolve(int* orders) {
