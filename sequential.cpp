@@ -105,8 +105,92 @@ void bruteForceSolve(vector<vector<int>>& orders,
     }
 }
 
-void dpSolve(vector<vector<int>>& orders) {
+void printSet(vector<bool>* s, int numProducts) {
+    for (int i = 0; i < numProducts; i++) {
+        if((*s)[i] == true)
+            cout << i << " ";
+    }
+}
+
+int a(int p,
+      vector<bool>* s,
+      vector<vector<int>>& orders,
+      int numCustomers,
+      int numProducts) {
+    vector<bool> before(numCustomers);
+    vector<bool> after(numCustomers);
+    vector<bool> now(numCustomers);
+    for (int i = 0; i < numCustomers; i++) {
+        before[i] = false;
+        after[i] = false;
+        now[i] = false;
+    }
+
+    for (int i = 0; i < numCustomers; i++) {
+        for (int j = 0; j < numProducts; j++) {
+            if (j == p && orders[i][j] > 0)
+                now[i] = true;
+            if ((*s)[j] == true && orders[i][j] > 0)
+                after[i] = true;
+            else if ((*s)[j] == false && orders[i][j] > 0)
+                before[i] = true;
+        }
+    }
+
+    int active_stacks = 0;
+    for (int i = 0; i < numCustomers; i++) {
+        if(now[i] || (before[i] && after[i]))
+            active_stacks++;
+    }
+
+    return active_stacks;
+}
+
+int stacks(vector<bool>* s,
+           vector<vector<int>>& orders,
+           int numCustomers,
+           int numProducts) {
+    bool any = false;
+    for (int i = 0; i < numProducts; i++) {
+        if ((*s)[i] == true) {
+            any = true;
+            break;
+        }
+    }
+    if (any == false) {
+        return 0;
+    }
+
+    int min_stacks = s->size() * 10;
+    for (int p = 0; p < numProducts; p++) {
+        if ((*s)[p] == true) {
+            (*s)[p] = false;
+            int active = a(p, s, orders, numCustomers, numProducts);
+            int after = stacks(s, orders, numCustomers, numProducts);
+            // cout << endl << "For set " << p << ", ";
+            // printSet(s, numProducts);
+            // cout << endl << "active: " << active << " after: " << after << endl;
+            int max = (active > after) ? active : after;
+            if (max < min_stacks)
+                min_stacks = max;
+            (*s)[p] = true;
+        }
+    }
+    // cout << endl << "Calculating set ";
+    // printSet(s, numProducts);
+    // cout << endl << "min_stacks: " << min_stacks << endl;
+
+    return min_stacks;
+}
+
+void dpSolve(vector<vector<int>>& orders, int numCustomers, int numProducts) {
     // for each size of set generate the number of
+    vector<bool> bag(numProducts);
+    for (int i = 0; i < numProducts; i++) {
+        bag[i] = true;
+    }
+    int min_stacks = stacks(&bag, orders, numCustomers, numProducts);
+    cout << "minStacks: " << min_stacks << endl;
 }
 
 void solve(vector<vector<int>>& orders, int numCustomers, int numProducts) {
@@ -160,6 +244,7 @@ int main(int argc, char** argv) {
     }
     cout << "numCustomers: " << numCustomers << endl
          << "numProducts: " << numProducts << endl;
-    bruteForceSolve(orders, numCustomers, numProducts);
+    // bruteForceSolve(orders, numCustomers, numProducts);
+    dpSolve(orders, numCustomers, numProducts);
     return 0;
 }
