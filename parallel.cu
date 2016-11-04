@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <time.h>
 
 #define NUM_BLOCKS 65535
 
@@ -238,7 +239,11 @@ int main(int argc, char** argv) {
     cout << "numCustomers: " << numCustomers << endl
          << "numProducts: " << numProducts << endl;
     printOrders(orders, numCustomers, numProducts);
+    clock_t start = clock();
     bruteForceSolve(orders, numCustomers, numProducts);
+    clock_t end = clock();
+    float seconds = (float)(end - start) / CLOCKS_PER_SEC;
+    cout << "Took " << seconds << " seconds";
     return 0;
 }
 
