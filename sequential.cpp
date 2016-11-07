@@ -195,6 +195,7 @@ int stacks(vector<bool>* s,
         }
     }
     if (any == false) {
+        setCache(s, 0);
         return 0;
     }
 
