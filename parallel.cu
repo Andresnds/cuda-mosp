@@ -246,4 +246,3 @@ int main(int argc, char** argv) {
     cout << "Took " << seconds << " seconds" << endl;
     return 0;
 }
-

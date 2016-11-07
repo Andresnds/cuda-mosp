@@ -3,6 +3,7 @@
 #include <fstream>
 #include <map>
 #include <string>
+#include <time.h>
 #include <vector>
 
 using namespace std;
@@ -275,7 +276,11 @@ int main(int argc, char** argv) {
     cout << "numCustomers: " << numCustomers << endl
          << "numProducts: " << numProducts << endl;
     printOrders(orders);
+    clock_t start = clock();
     // bruteForceSolve(orders, numCustomers, numProducts);
     dpSolve(orders, numCustomers, numProducts);
+    clock_t end = clock();
+    float seconds = (float)(end - start) / CLOCKS_PER_SEC;
+    cout << "Took " << seconds << " seconds" << endl;
     return 0;
 }
