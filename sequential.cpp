@@ -207,7 +207,8 @@ int stacks(vector<bool>* s,
             int after = stacks(s, orders, numCustomers, numProducts);
             // cout << endl << "For set " << p << ", ";
             // printSet(s, numProducts);
-            // cout << endl << "active: " << active << " after: " << after << endl;
+            // cout << endl << "active: " << active << " after: " << after
+            //      << endl;
             int max = (active > after) ? active : after;
             if (max < min_stacks)
                 min_stacks = max;
@@ -254,6 +255,25 @@ int main(int argc, char** argv) {
     cout << "Reading from " << input << endl;
     readFile.open(input);
 
+
+    bool useBruteForce = false;
+    if (argc < 2 || (strncmp(argv[2], "bf", 2) != 0 &&
+                     strncmp(argv[2], "dp", 2) != 0)) {
+        cout << "Specify if should use \"bf\" or \"dp\" as the second argument"
+             << endl;
+        exit(EXIT_FAILURE);
+    } else {
+        if (strncmp(argv[2], "bf", 2) == 0)
+            useBruteForce = true;
+        else if (strncmp(argv[2], "dp", 2) == 0)
+            useBruteForce = false;
+        else {
+            cout << "Specify if should use \"bf\" or \"dp\" as the second "
+                 << "argument" << endl;
+            exit(EXIT_FAILURE);
+        }
+    }
+
     if (readFile.is_open()) {
         readFile >> numCustomers;
         readFile >> numProducts;
@@ -278,8 +298,14 @@ int main(int argc, char** argv) {
          << "numProducts: " << numProducts << endl;
     printOrders(orders);
     clock_t start = clock();
-    // bruteForceSolve(orders, numCustomers, numProducts);
-    dpSolve(orders, numCustomers, numProducts);
+    if (useBruteForce) {
+        cout << "Solving by Brute Force..." << endl;
+        bruteForceSolve(orders, numCustomers, numProducts);
+    }
+    else {
+        cout << "Solving by Dynamic Programming..." << endl;
+        dpSolve(orders, numCustomers, numProducts);
+    }
     clock_t end = clock();
     float seconds = (float)(end - start) / CLOCKS_PER_SEC;
     cout << "Took " << seconds << " seconds" << endl;
