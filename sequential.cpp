@@ -1,6 +1,7 @@
 #include <cmath>
 #include <iostream>
 #include <fstream>
+#include <map>
 #include <string>
 #include <vector>
 
@@ -146,10 +147,36 @@ int a(int p,
     return active_stacks;
 }
 
+string vecToString(vector<bool>* v) {
+    string s;
+    for (int i = 0; i < v->size(); i++) {
+        if ((*v)[i] == true)
+            s += to_string(i);
+    }
+    return s;
+}
+
+map<string, int> cache;
+int getCache(vector<bool>* v) {
+    string s = vecToString(v);
+    if (cache.find(s) != cache.end())
+        return cache[s];
+    return -1;
+}
+
+void setCache(vector<bool>* v, int value) {
+    string s = vecToString(v);
+    cache[s] = value;
+}
+
 int stacks(vector<bool>* s,
            vector<vector<int>>& orders,
            int numCustomers,
            int numProducts) {
+    int cached = getCache(s);
+    if (cached > -1)
+        return cached;
+
     bool any = false;
     for (int i = 0; i < numProducts; i++) {
         if ((*s)[i] == true) {
@@ -180,6 +207,7 @@ int stacks(vector<bool>* s,
     // printSet(s, numProducts);
     // cout << endl << "min_stacks: " << min_stacks << endl;
 
+    setCache(s, min_stacks);
     return min_stacks;
 }
 
