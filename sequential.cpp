@@ -7,6 +7,15 @@
 
 using namespace std;
 
+void printOrders(vector<vector<int>>& orders) {
+    for (vector<int> v : orders) {
+        for (int i : v) {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+}
+
 // TODO: Test this function
 // Calculates the maximum number of open stacks for a given producing sequence
 int maximumOpenStacks(vector<int>& sequence,
@@ -222,13 +231,6 @@ void dpSolve(vector<vector<int>>& orders, int numCustomers, int numProducts) {
 }
 
 void solve(vector<vector<int>>& orders, int numCustomers, int numProducts) {
-    for (vector<int> v : orders) {
-        for (int i : v) {
-            cout << i << " ";
-        }
-        cout << endl;
-    }
-
     vector<int> sequence(numProducts);
     for (int i = 0; i < numProducts; i++) sequence[i] = i;
     cout << maximumOpenStacks(sequence, orders, numProducts, numCustomers)
@@ -272,6 +274,7 @@ int main(int argc, char** argv) {
     }
     cout << "numCustomers: " << numCustomers << endl
          << "numProducts: " << numProducts << endl;
+    printOrders(orders);
     // bruteForceSolve(orders, numCustomers, numProducts);
     dpSolve(orders, numCustomers, numProducts);
     return 0;
