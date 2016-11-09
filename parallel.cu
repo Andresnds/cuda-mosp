@@ -151,8 +151,8 @@ void bruteForceSolve(int* orders,
         else
             numSequencesToProcess = numSequences - i * NUM_BLOCKS;
 
-        cout << "Step " << i << ". Calculating " << numSequencesToProcess
-             << " More " << numSequences - i * NUM_BLOCKS << " to go." << endl;
+        // cout << "Step " << i << ". Calculating " << numSequencesToProcess
+        //      << " More " << numSequences - i * NUM_BLOCKS << " to go." << endl;
 
         // Calculating maximum stack for each one of them
         calculateMaximumOpenStacks<<<numSequencesToProcess, 1>>>(stackSizes_d,
