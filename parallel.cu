@@ -136,8 +136,9 @@ void calculateMaximumOpenStacks(int* stackSizes,
 
 void checkOk(cudaError_t err) {
     if (err != cudaSuccess) {
-        cout << cudaGetErrorString(err) << endl;
+        cout << cudaGetErrorString(err) << " at " << __LINE__ << endl;
         exit(EXIT_FAILURE);
+
     }
 }
 
@@ -222,6 +223,7 @@ int64_t combination(int n, int k) {
     return factorial(n)/factorial(k)/factorial(n-k);
 }
 
+__device__
 bool contains(int set, int p) {
     for (int i = 0; i < p; i++) {
         set /= 2;
@@ -230,6 +232,7 @@ bool contains(int set, int p) {
     return set % 2;
 }
 
+__device__ __host__
 int remove(int set, int p) {
     int stack = 0;
     int offset = 1;
@@ -242,6 +245,7 @@ int remove(int set, int p) {
     return stack;
 }
 
+__device__
 int a(int p,
       int set,
       int* orders,
@@ -294,7 +298,8 @@ int a(int p,
     return active_stacks;
 }
 
-void computeStacks(int set,
+__global__
+void computeStacks(int* sets,
                    int* stacksResults,
                    int* bestP,
                    int* orders,
@@ -302,6 +307,7 @@ void computeStacks(int set,
                    int numProducts) {
     // cout << "Computing stacks for set: " << set << endl;
     // printSet(set, numProducts);
+    int set = sets[blockIdx.x];
 
     if (set == 0) {
         stacksResults[set] = 0;
@@ -310,7 +316,7 @@ void computeStacks(int set,
 
     // cout << endl;
     int best = -1;
-    int min_stacks = numCustomers;
+    int min_stacks = numCustomers * 10;
     for (int p = 0; p < numProducts; p++) {
         if (contains(set, p)) {
             int newSet = remove(set, p);
@@ -340,6 +346,11 @@ int countOnes(int n) {
 }
 
 void dpSolve(int* orders, int numCustomers, int numProducts) {
+    int* orders_d;
+    int sizeOrders = numCustomers * numProducts * sizeof(int);
+    checkOk(cudaMalloc((void**) &orders_d, sizeOrders));
+    checkOk(cudaMemcpy(orders_d, orders, sizeOrders, cudaMemcpyHostToDevice));
+
     int** sets = (int**) malloc((numProducts + 1) * sizeof(int*));
     int* combinations = (int*) malloc((numProducts + 1) * sizeof(int*));
     for (int i = 0; i < (numProducts + 1); i++) {
@@ -354,19 +365,37 @@ void dpSolve(int* orders, int numCustomers, int numProducts) {
         combinations[ones]++;
     }
 
-    int* stacksResults = (int*) malloc(pow(2, numProducts) * sizeof(int));
-    int* bestP = (int*) malloc(pow(2, numProducts) * sizeof(int));
+    int stacksResultsSize = pow(2, numProducts) * sizeof(int);
+    int* stacksResults = (int*) malloc(stacksResultsSize);
+    int* stacksResults_d;
+    checkOk(cudaMalloc((void**) &stacksResults_d, stacksResultsSize));
+
+
+    int bestPSize = pow(2, numProducts) * sizeof(int);
+    int* bestP = (int*) malloc(bestPSize);
+    int* bestP_d;
+    checkOk(cudaMalloc((void**) &bestP_d, bestPSize));
+
     for (int setSize = 0;  setSize < numProducts + 1;  setSize++) {
-        for (int setIndex = 0; setIndex < combinations[setSize]; setIndex++) {
-            computeStacks(sets[setSize][setIndex],
-                          stacksResults,
-                          bestP,
-                          orders,
-                          numCustomers,
-                          numProducts);
-        }
+        int* sets_d;
+        int setsSize = combinations[setSize] * sizeof(int);
+        checkOk(cudaMalloc((void**) &sets_d, setsSize));
+        checkOk(cudaMemcpy(sets_d, sets[setSize], setsSize, cudaMemcpyHostToDevice));
+
+        computeStacks<<<combinations[setSize], 1>>>(sets_d,
+                                                    stacksResults_d,
+                                                    bestP_d,
+                                                    orders_d,
+                                                    numCustomers,
+                                                    numProducts);
+
+        // checkOk(cudaDeviceSynchronize());
+        checkOk(cudaFree(sets_d));
     }
 
+    checkOk(cudaMemcpy(stacksResults, stacksResults_d, stacksResultsSize, cudaMemcpyDeviceToHost));
+
+    checkOk(cudaMemcpy(bestP, bestP_d, bestPSize, cudaMemcpyDeviceToHost));
 
     // cout << "bestP" << endl;
     // for (int i = 0; i < pow(2, numProducts); i++) {
@@ -395,6 +424,17 @@ void dpSolve(int* orders, int numCustomers, int numProducts) {
     cout << "OpenStacks: " << stacksResults[(int) pow(2, numProducts) - 1] << endl;
 
     // Freeing memory
+
+    checkOk(cudaFree(bestP_d));
+    checkOk(cudaFree(stacksResults_d));
+    checkOk(cudaFree(orders_d));
+
+    free(bestP);
+    free(stacksResults);
+    free(combinations);
+    for (int i = 0; i < (numProducts + 1); i++) free(sets[i]);
+    free(sets);
+
 }
 
 int main(int argc, char** argv) {
