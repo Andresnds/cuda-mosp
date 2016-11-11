@@ -13,9 +13,16 @@ int mIndex(int i, int j, int n, int m) {
     return i*m + j;
 }
 
-double factorial(int n) {
-    double x = n + 1;
-    return tgamma(x);
+int64_t cache[100];
+int64_t cached = 0;
+int64_t factorial(int64_t n) {
+    if (n < 2) return 1;
+    if (n > cached) {
+        cache[n] = n * factorial(n-1);
+        cached = n;
+        // cout << "Calculating factorial " << n <<": " << cache[n] << endl;
+    }
+    return cache[n];
 }
 
 void printOrders(int* orders, int numCustomers, int numProducts) {
@@ -25,6 +32,14 @@ void printOrders(int* orders, int numCustomers, int numProducts) {
         }
         cout << endl;
     }
+}
+
+void printSet(int set, int numProducts) {
+    for (int i = 0; i < numProducts; i++) {
+        cout << set % 2 << " ";
+        set /= 2;
+    }
+    cout << endl;
 }
 
 void printOrdersInSequence(int* sequence,
@@ -135,7 +150,7 @@ void bruteForceSolve(int* orders,
     checkOk(cudaMemcpy(orders_d, orders, sizeOrders, cudaMemcpyHostToDevice));
 
     int* stackSizes_d;
-    double numSequences = factorial(numProducts);
+    int64_t numSequences = factorial(numProducts);
     int sizeStacksSizes = NUM_BLOCKS * sizeof(int);
     checkOk(cudaMalloc((void**) &stackSizes_d, sizeStacksSizes));
 
@@ -151,8 +166,8 @@ void bruteForceSolve(int* orders,
         else
             numSequencesToProcess = numSequences - i * NUM_BLOCKS;
 
-        // cout << "Step " << i << ". Calculating " << numSequencesToProcess
-        //      << " More " << numSequences - i * NUM_BLOCKS << " to go." << endl;
+        cout << "Step " << i << ". Calculating " << numSequencesToProcess
+             << " More " << numSequences - i * NUM_BLOCKS << " to go." << endl;
 
         // Calculating maximum stack for each one of them
         calculateMaximumOpenStacks<<<numSequencesToProcess, 1>>>(stackSizes_d,
@@ -203,8 +218,183 @@ void bruteForceSolve(int* orders,
     // End of debugging code
 }
 
-void dpSolve(int* orders) {
-    // for each size of set generate the number of
+int64_t combination(int n, int k) {
+    return factorial(n)/factorial(k)/factorial(n-k);
+}
+
+bool contains(int set, int p) {
+    for (int i = 0; i < p; i++) {
+        set /= 2;
+    }
+    // cout << set << endl;
+    return set % 2;
+}
+
+int remove(int set, int p) {
+    int stack = 0;
+    int offset = 1;
+    for (int i = 0; i < 32; i++) {
+        if (i != p)
+            stack += (set % 2) * offset;
+        set /= 2;
+        offset *= 2;
+    }
+    return stack;
+}
+
+int a(int p,
+      int set,
+      int* orders,
+      int numCustomers,
+      int numProducts) {
+    bool* before = (bool*) malloc(numCustomers * sizeof(bool));
+    bool* after = (bool*) malloc(numCustomers * sizeof(bool));
+    bool* now = (bool*) malloc(numCustomers * sizeof(bool));
+    for (int i = 0; i < numCustomers; i++) {
+        before[i] = false;
+        after[i] = false;
+        now[i] = false;
+    }
+
+    for (int i = 0; i < numCustomers; i++) {
+        for (int j = 0; j < numProducts; j++) {
+            if (j == p &&
+                orders[mIndex(i, j, numCustomers, numProducts)] > 0) {
+                now[i] = true;
+            }
+            if (contains(set, j) == true &&
+                orders[mIndex(i, j, numCustomers, numProducts)] > 0) {
+                after[i] = true;
+            }
+            if (contains(set, j) == false &&
+                orders[mIndex(i, j, numCustomers, numProducts)] > 0) {
+                before[i] = true;
+            }
+        }
+    }
+
+    // cout << "Testing after and before for set: " << set << " and product " << p << endl;
+    // printSet(set, numProducts);
+
+    int active_stacks = 0;
+    for (int i = 0; i < numCustomers; i++) {
+        if(now[i] || (before[i] && after[i])) {
+            active_stacks++;
+            // cout << i << " ";
+        }
+    }
+    // cout << endl;
+
+    free(now);
+    free(after);
+    free(before);
+
+    // cout << active_stacks << " active" << endl;
+
+    return active_stacks;
+}
+
+void computeStacks(int set,
+                   int* stacksResults,
+                   int* bestP,
+                   int* orders,
+                   int numCustomers,
+                   int numProducts) {
+    // cout << "Computing stacks for set: " << set << endl;
+    // printSet(set, numProducts);
+
+    if (set == 0) {
+        stacksResults[set] = 0;
+        return;
+    }
+
+    // cout << endl;
+    int best = -1;
+    int min_stacks = numCustomers;
+    for (int p = 0; p < numProducts; p++) {
+        if (contains(set, p)) {
+            int newSet = remove(set, p);
+            // cout << "Using result for set: " << newSet << " which is " << stacksResults[newSet] << endl;
+            // printSet(newSet, numProducts);
+            int active = a(p, newSet, orders, numCustomers, numProducts);
+            int after = stacksResults[newSet];
+            int max = (active > after) ? active : after;
+            if (max < min_stacks) {
+                min_stacks = max;
+                best = p;
+            }
+        }
+    }
+    // cout << endl;
+    stacksResults[set] = min_stacks;
+    bestP[set] = best;
+}
+
+int countOnes(int n) {
+    int ones = 0;
+    while (n > 0) {
+        ones += n % 2;
+        n /= 2;
+    }
+    return ones;
+}
+
+void dpSolve(int* orders, int numCustomers, int numProducts) {
+    int** sets = (int**) malloc((numProducts + 1) * sizeof(int*));
+    int* combinations = (int*) malloc((numProducts + 1) * sizeof(int*));
+    for (int i = 0; i < (numProducts + 1); i++) {
+        int numCombinations = combination(numProducts, i);
+        sets[i] = (int*) malloc(numCombinations * sizeof(int));
+        combinations[i] = 0;
+    }
+
+    for (int i = 0; i < pow(2, numProducts); i++) {
+        int ones = countOnes(i);
+        sets[ones][combinations[ones]] = i;
+        combinations[ones]++;
+    }
+
+    int* stacksResults = (int*) malloc(pow(2, numProducts) * sizeof(int));
+    int* bestP = (int*) malloc(pow(2, numProducts) * sizeof(int));
+    for (int setSize = 0;  setSize < numProducts + 1;  setSize++) {
+        for (int setIndex = 0; setIndex < combinations[setSize]; setIndex++) {
+            computeStacks(sets[setSize][setIndex],
+                          stacksResults,
+                          bestP,
+                          orders,
+                          numCustomers,
+                          numProducts);
+        }
+    }
+
+
+    // cout << "bestP" << endl;
+    // for (int i = 0; i < pow(2, numProducts); i++) {
+    //     cout << bestP[i] << " ";
+    // }
+    // cout << endl;
+
+    // cout << "stacksResults" << endl;
+    // for (int i = 0; i < pow(2, numProducts); i++) {
+    //     cout << stacksResults[i] << " ";
+    // }
+    // cout << endl;
+
+    cout << "Best sequence:" << endl;
+    int set = pow(2, numProducts) - 1;
+    int* sequence = (int*) malloc(numProducts * sizeof(int));
+    for (int i = 0; i < numProducts; i++) {
+        int best = bestP[set];
+        set = remove(set, best);
+        sequence[i] = best;
+        cout << best << " ";
+    }
+    cout << endl;
+    printOrdersInSequence(sequence, orders, numCustomers, numProducts);
+
+    cout << "OpenStacks: " << stacksResults[(int) pow(2, numProducts) - 1] << endl;
+
+    // Freeing memory
 }
 
 int main(int argc, char** argv) {
@@ -240,7 +430,8 @@ int main(int argc, char** argv) {
          << "numProducts: " << numProducts << endl;
     printOrders(orders, numCustomers, numProducts);
     clock_t start = clock();
-    bruteForceSolve(orders, numCustomers, numProducts);
+    // bruteForceSolve(orders, numCustomers, numProducts);
+    dpSolve(orders, numCustomers, numProducts);
     clock_t end = clock();
     float seconds = (float)(end - start) / CLOCKS_PER_SEC;
     cout << "Took " << seconds << " seconds" << endl;
