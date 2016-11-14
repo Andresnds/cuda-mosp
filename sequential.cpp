@@ -4,6 +4,7 @@
 #include <map>
 #include <string>
 #include <time.h>
+#include <tuple>
 #include <vector>
 
 using namespace std;
@@ -13,6 +14,23 @@ void printOrders(vector<vector<int>>& orders) {
         for (int i : v) {
             cout << i << " ";
         }
+        cout << endl;
+    }
+}
+
+void printOrdersInSequence(vector<int>& sequence,
+                           vector<vector<int>>& orders,
+                           int numCustomers,
+                           int numProducts) {
+    cout << "Best Sequence: " << endl;
+    for (int i = 0; i < numProducts; i++) {
+        cout << sequence[i] << " ";
+    }
+    cout << endl;
+
+    for (int i = 0; i < numCustomers; i++) {
+        for (int j = 0; j < numProducts; j++)
+            cout << orders[i][sequence[j]] << " ";
         cout << endl;
     }
 }
@@ -91,7 +109,7 @@ void bruteForceSolve(vector<vector<int>>& orders,
                                       numProducts);
         // cout << stackSizes[i] << " ";
     }
-    cout << endl;
+    // cout << endl;
 
     // Calculate the global minimum
     int minStacks = numCustomers + 1;
@@ -102,18 +120,8 @@ void bruteForceSolve(vector<vector<int>>& orders,
             bestI = i;
         }
     }
-    cout << "minStacks: " << minStacks << endl;
-    cout << "sequence: ";
-    for (int i = 0; i < numProducts; i++) {
-        cout << sequences[bestI][i] << " ";
-    }
-    cout << endl;
-
-    for (int i = 0; i < numCustomers; i++) {
-        for (int j = 0; j < numProducts; j++)
-            cout << orders[i][sequences[bestI][j]] << " ";
-        cout << endl;
-    }
+    printOrdersInSequence(sequences[bestI], orders, numCustomers, numProducts);
+    cout << "OpenStacks: " << minStacks << endl;
 }
 
 void printSet(vector<bool>* s, int numProducts) {
@@ -166,25 +174,26 @@ string vecToString(vector<bool>* v) {
     return s;
 }
 
-map<string, int> cache;
-int getCache(vector<bool>* v) {
+map<string, tuple<int, vector<int>>> cache;
+tuple<int, vector<int>> getCache(vector<bool>* v) {
     string s = vecToString(v);
     if (cache.find(s) != cache.end())
         return cache[s];
-    return -1;
+    vector<int> sol;
+    return make_tuple(-1, sol);
 }
 
-void setCache(vector<bool>* v, int value) {
+void setCache(vector<bool>* v, int value, vector<int> solution) {
     string s = vecToString(v);
-    cache[s] = value;
+    cache[s] = make_tuple(value, solution);
 }
 
-int stacks(vector<bool>* s,
-           vector<vector<int>>& orders,
-           int numCustomers,
-           int numProducts) {
-    int cached = getCache(s);
-    if (cached > -1)
+tuple<int, vector<int>> stacks(vector<bool>* s,
+                               vector<vector<int>>& orders,
+                               int numCustomers,
+                               int numProducts) {
+    tuple<int, vector<int>> cached = getCache(s);
+    if (get<0>(cached) > -1)
         return cached;
 
     bool any = false;
@@ -195,23 +204,31 @@ int stacks(vector<bool>* s,
         }
     }
     if (any == false) {
-        setCache(s, 0);
-        return 0;
+        vector<int> v;
+        setCache(s, 0, v);
+        return getCache(s);
     }
 
+    vector<int> solution;
     int min_stacks = s->size() * 10;
     for (int p = 0; p < numProducts; p++) {
         if ((*s)[p] == true) {
             (*s)[p] = false;
             int active = a(p, s, orders, numCustomers, numProducts);
-            int after = stacks(s, orders, numCustomers, numProducts);
+            tuple<int, vector<int>> after_sol = stacks(
+                    s, orders, numCustomers, numProducts);
+            int after = get<0>(after_sol);
+            vector<int> sol = get<1>(after_sol);
             // cout << endl << "For set " << p << ", ";
             // printSet(s, numProducts);
             // cout << endl << "active: " << active << " after: " << after
             //      << endl;
             int max = (active > after) ? active : after;
-            if (max < min_stacks)
+            if (max < min_stacks){
                 min_stacks = max;
+                solution = sol;
+                solution.push_back(p);
+            }
             (*s)[p] = true;
         }
     }
@@ -219,8 +236,8 @@ int stacks(vector<bool>* s,
     // printSet(s, numProducts);
     // cout << endl << "min_stacks: " << min_stacks << endl;
 
-    setCache(s, min_stacks);
-    return min_stacks;
+    setCache(s, min_stacks, solution);
+    return getCache(s);
 }
 
 void dpSolve(vector<vector<int>>& orders, int numCustomers, int numProducts) {
@@ -229,8 +246,12 @@ void dpSolve(vector<vector<int>>& orders, int numCustomers, int numProducts) {
     for (int i = 0; i < numProducts; i++) {
         bag[i] = true;
     }
-    int min_stacks = stacks(&bag, orders, numCustomers, numProducts);
-    cout << "minStacks: " << min_stacks << endl;
+    tuple<int, vector<int>> minStacks_solution = stacks(
+            &bag, orders, numCustomers, numProducts);
+    int minStacks = get<0>(minStacks_solution);
+    vector<int> solution = get<1>(minStacks_solution);
+    printOrdersInSequence(solution, orders, numCustomers, numProducts);
+    cout << "OpenStacks: " << minStacks << endl;
 }
 
 void solve(vector<vector<int>>& orders, int numCustomers, int numProducts) {
@@ -244,36 +265,33 @@ int main(int argc, char** argv) {
     ifstream readFile;
     int numCustomers, numProducts;
     vector<vector<int>> orders;
-    string input;
     // char output[1000];
 
-    if (argc > 1) {
-        input = argv[1];
-    } else {
-        input = "input.txt";
-    }
-    cout << "Reading from " << input << endl;
-    readFile.open(input);
-
-
     bool useBruteForce = false;
-    if (argc < 2 || (strncmp(argv[2], "bf", 2) != 0 &&
-                     strncmp(argv[2], "dp", 2) != 0)) {
-        cout << "Specify if should use \"bf\" or \"dp\" as the second argument"
+    if (argc < 1 || (strncmp(argv[1], "bf", 2) != 0 &&
+                     strncmp(argv[1], "dp", 2) != 0)) {
+        cout << "Specify if should use \"bf\" or \"dp\" as the first argument"
              << endl;
         exit(EXIT_FAILURE);
     } else {
-        if (strncmp(argv[2], "bf", 2) == 0)
+        if (strncmp(argv[1], "bf", 2) == 0) {
+            cout << "Solving by Brute Force..." << endl;
             useBruteForce = true;
-        else if (strncmp(argv[2], "dp", 2) == 0)
+        } else {
+            cout << "Solving by Dynamic Programming..." << endl;
             useBruteForce = false;
-        else {
-            cout << "Specify if should use \"bf\" or \"dp\" as the second "
-                 << "argument" << endl;
-            exit(EXIT_FAILURE);
         }
     }
 
+    if (argc < 2) {
+        cout << "Specify the input file as the second argument" << endl;
+        exit(EXIT_FAILURE);
+    }
+
+    string input;
+    input = argv[2];
+    cout << "Reading from " << input << endl;
+    readFile.open(input);
     if (readFile.is_open()) {
         readFile >> numCustomers;
         readFile >> numProducts;
@@ -299,11 +317,9 @@ int main(int argc, char** argv) {
     printOrders(orders);
     clock_t start = clock();
     if (useBruteForce) {
-        cout << "Solving by Brute Force..." << endl;
         bruteForceSolve(orders, numCustomers, numProducts);
     }
     else {
-        cout << "Solving by Dynamic Programming..." << endl;
         dpSolve(orders, numCustomers, numProducts);
     }
     clock_t end = clock();

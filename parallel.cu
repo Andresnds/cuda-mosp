@@ -448,33 +448,31 @@ int main(int argc, char** argv) {
     int numCustomers, numProducts;
     int* orders;
 
-    char* input;
-    if (argc > 1) {
-        input = argv[1];
-    } else {
-        input = "input.txt";
-    }
-    cout << "Reading from " << input << endl;
-    readFile.open(input);
-
     bool useBruteForce = false;
-    if (argc < 2 || (strncmp(argv[2], "bf", 2) != 0 &&
-                     strncmp(argv[2], "dp", 2) != 0)) {
-        cout << "Specify if should use \"bf\" or \"dp\" as the second argument"
+    if (argc < 1 || (strncmp(argv[1], "bf", 2) != 0 &&
+                     strncmp(argv[1], "dp", 2) != 0)) {
+        cout << "Specify if should use \"bf\" or \"dp\" as the first argument"
              << endl;
         exit(EXIT_FAILURE);
     } else {
-        if (strncmp(argv[2], "bf", 2) == 0)
+        if (strncmp(argv[1], "bf", 2) == 0) {
+            cout << "Solving by Brute Force..." << endl;
             useBruteForce = true;
-        else if (strncmp(argv[2], "dp", 2) == 0)
+        } else {
+            cout << "Solving by Dynamic Programming..." << endl;
             useBruteForce = false;
-        else {
-            cout << "Specify if should use \"bf\" or \"dp\" as the second "
-                 << "argument" << endl;
-            exit(EXIT_FAILURE);
         }
     }
 
+    if (argc < 2) {
+        cout << "Specify the input file as the second argument" << endl;
+        exit(EXIT_FAILURE);
+    }
+
+    char* input;
+    input = argv[2];
+    cout << "Reading from " << input << endl;
+    readFile.open(input);
     if (readFile.is_open()) {
         readFile >> numCustomers;
         readFile >> numProducts;
@@ -493,17 +491,18 @@ int main(int argc, char** argv) {
     cout << "numCustomers: " << numCustomers << endl
          << "numProducts: " << numProducts << endl;
     printOrders(orders, numCustomers, numProducts);
+
     clock_t start = clock();
     if (useBruteForce) {
-        cout << "Solving by Brute Force..." << endl;
         bruteForceSolve(orders, numCustomers, numProducts);
     }
     else {
-        cout << "Solving by Dynamic Programming..." << endl;
         dpSolve(orders, numCustomers, numProducts);
     }
     clock_t end = clock();
     float seconds = (float)(end - start) / CLOCKS_PER_SEC;
     cout << "Took " << seconds << " seconds" << endl;
+
+
     return 0;
 }
