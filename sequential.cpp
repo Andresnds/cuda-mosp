@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <map>
+#include <sstream>
 #include <string>
 #include <time.h>
 #include <tuple>
@@ -188,6 +189,10 @@ void setCache(vector<bool>* v, int value, vector<int> solution) {
     cache[s] = make_tuple(value, solution);
 }
 
+void resetCache() {
+    cache.clear();
+}
+
 tuple<int, vector<int>> stacks(vector<bool>* s,
                                vector<vector<int>>& orders,
                                int numCustomers,
@@ -254,19 +259,7 @@ void dpSolve(vector<vector<int>>& orders, int numCustomers, int numProducts) {
     cout << "OpenStacks: " << minStacks << endl;
 }
 
-void solve(vector<vector<int>>& orders, int numCustomers, int numProducts) {
-    vector<int> sequence(numProducts);
-    for (int i = 0; i < numProducts; i++) sequence[i] = i;
-    cout << maximumOpenStacks(sequence, orders, numProducts, numCustomers)
-         << endl;
-}
-
 int main(int argc, char** argv) {
-    ifstream readFile;
-    int numCustomers, numProducts;
-    vector<vector<int>> orders;
-    // char output[1000];
-
     bool useBruteForce = false;
     if (argc < 1 || (strncmp(argv[1], "bf", 2) != 0 &&
                      strncmp(argv[1], "dp", 2) != 0)) {
@@ -288,42 +281,60 @@ int main(int argc, char** argv) {
         exit(EXIT_FAILURE);
     }
 
-    string input;
-    input = argv[2];
-    cout << "Reading from " << input << endl;
-    readFile.open(input);
-    if (readFile.is_open()) {
-        readFile >> numCustomers;
-        readFile >> numProducts;
-        for (int i = 0; i < numCustomers; i++) {
-            vector<int> v;
-            for (int j = 0; j < numProducts; j++) {
-                int output;
-                readFile >> output;
-                v.push_back(output);
+    string inputFilename;
+    inputFilename = argv[2];
+    cout << "Reading from " << inputFilename << endl;
+
+    ifstream inputFile;
+    inputFile.open(inputFilename);
+    string buffer;
+    if (inputFile.is_open()) {
+        while (getline(inputFile, buffer)) {
+            // Read input
+            cout << "buffer: " << buffer << endl;
+            getline(inputFile, buffer);
+
+            int numCustomers = 0, numProducts = 0;
+            istringstream nums(buffer);
+            nums >> numCustomers;
+            nums >> numProducts;
+
+            vector<vector<int>> orders;
+            for (int i = 0; i < numCustomers; i++) {
+                getline(inputFile, buffer);
+                istringstream customerOrders(buffer);
+                vector<int> v;
+                for (int j = 0; j < numProducts; j++) {
+                    int didOrder;
+                    customerOrders >> didOrder;
+                    v.push_back(didOrder);
+                }
+                orders.push_back(v);
             }
-            orders.push_back(v);
+
+            cout << "numCustomers: " << numCustomers << endl
+                 << "numProducts: " << numProducts << endl;
+            printOrders(orders);
+            resetCache();
+
+            // Solve
+            clock_t start = clock();
+            if (useBruteForce) {
+                bruteForceSolve(orders, numCustomers, numProducts);
+            }
+            else {
+                dpSolve(orders, numCustomers, numProducts);
+            }
+            clock_t end = clock();
+
+            float seconds = (float)(end - start) / CLOCKS_PER_SEC;
+            cout << "Took " << seconds << " seconds" << endl << endl;
+
+            getline(inputFile, buffer);
         }
-        // while (!readFile.eof()) {
-        //     readFile >> output;
-        //     cout << output << endl;
-        // }
-        readFile.close();
+        inputFile.close();
     } else {
         cout << "Not able to open the input file." <<  endl;
     }
-    cout << "numCustomers: " << numCustomers << endl
-         << "numProducts: " << numProducts << endl;
-    printOrders(orders);
-    clock_t start = clock();
-    if (useBruteForce) {
-        bruteForceSolve(orders, numCustomers, numProducts);
-    }
-    else {
-        dpSolve(orders, numCustomers, numProducts);
-    }
-    clock_t end = clock();
-    float seconds = (float)(end - start) / CLOCKS_PER_SEC;
-    cout << "Took " << seconds << " seconds" << endl;
     return 0;
 }

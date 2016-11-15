@@ -1,6 +1,7 @@
 #include <cmath>
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <string>
 #include <time.h>
 
@@ -167,9 +168,6 @@ void bruteForceSolve(int* orders,
         else
             numSequencesToProcess = numSequences - i * NUM_BLOCKS;
 
-        // cout << "Step " << i << ". Calculating " << numSequencesToProcess
-        //      << " More " << numSequences - i * NUM_BLOCKS << " to go." << endl;
-
         // Calculating maximum stack for each one of them
         calculateMaximumOpenStacks<<<numSequencesToProcess, 1>>>(stackSizes_d,
                                                                  orders_d,
@@ -228,7 +226,6 @@ bool contains(int set, int p) {
     for (int i = 0; i < p; i++) {
         set /= 2;
     }
-    // cout << set << endl;
     return set % 2;
 }
 
@@ -277,23 +274,16 @@ int a(int p,
         }
     }
 
-    // cout << "Testing after and before for set: " << set << " and product " << p << endl;
-    // printSet(set, numProducts);
-
     int active_stacks = 0;
     for (int i = 0; i < numCustomers; i++) {
         if(now[i] || (before[i] && after[i])) {
             active_stacks++;
-            // cout << i << " ";
         }
     }
-    // cout << endl;
 
     free(now);
     free(after);
     free(before);
-
-    // cout << active_stacks << " active" << endl;
 
     return active_stacks;
 }
@@ -397,21 +387,12 @@ void dpSolve(int* orders, int numCustomers, int numProducts) {
         offset += combinations[setSize];
     }
 
-    checkOk(cudaMemcpy(stacksResults, stacksResults_d, stacksResultsSize, cudaMemcpyDeviceToHost));
+    checkOk(cudaMemcpy(stacksResults,
+                       stacksResults_d,
+                       stacksResultsSize,
+                       cudaMemcpyDeviceToHost));
 
     checkOk(cudaMemcpy(bestP, bestP_d, bestPSize, cudaMemcpyDeviceToHost));
-
-    // cout << "bestP" << endl;
-    // for (int i = 0; i < pow(2, numProducts); i++) {
-    //     cout << bestP[i] << " ";
-    // }
-    // cout << endl;
-
-    // cout << "stacksResults" << endl;
-    // for (int i = 0; i < pow(2, numProducts); i++) {
-    //     cout << stacksResults[i] << " ";
-    // }
-    // cout << endl;
 
     cout << "Best sequence:" << endl;
     int set = pow(2, numProducts) - 1;
@@ -425,7 +406,8 @@ void dpSolve(int* orders, int numCustomers, int numProducts) {
     cout << endl;
     printOrdersInSequence(sequence, orders, numCustomers, numProducts);
 
-    cout << "OpenStacks: " << stacksResults[(int) pow(2, numProducts) - 1] << endl;
+    cout << "OpenStacks: " << stacksResults[(int) pow(2, numProducts) - 1]
+         << endl;
 
     // Freeing memory
 
@@ -444,10 +426,6 @@ void dpSolve(int* orders, int numCustomers, int numProducts) {
 }
 
 int main(int argc, char** argv) {
-    ifstream readFile;
-    int numCustomers, numProducts;
-    int* orders;
-
     bool useBruteForce = false;
     if (argc < 1 || (strncmp(argv[1], "bf", 2) != 0 &&
                      strncmp(argv[1], "dp", 2) != 0)) {
@@ -469,40 +447,58 @@ int main(int argc, char** argv) {
         exit(EXIT_FAILURE);
     }
 
-    char* input;
-    input = argv[2];
-    cout << "Reading from " << input << endl;
-    readFile.open(input);
-    if (readFile.is_open()) {
-        readFile >> numCustomers;
-        readFile >> numProducts;
-        orders = (int*) malloc(numCustomers * numProducts * sizeof(int));
-        for (int i = 0; i < numCustomers; i++) {
-            for (int j = 0; j < numProducts; j++) {
-                int output;
-                readFile >> output;
-                orders[mIndex(i, j, numCustomers, numProducts)] = output;
+    ifstream inputFile;
+    char* inputFilename;
+    inputFilename = argv[2];
+
+    cout << "Reading from " << inputFilename << endl;
+    inputFile.open(inputFilename);
+    string buffer;
+    if (inputFile.is_open()) {
+        while(getline(inputFile, buffer)) {
+            // Read input
+            cout << "buffer: " << buffer << endl;
+            getline(inputFile, buffer);
+
+            int numCustomers = 0, numProducts = 0;
+            istringstream nums(buffer);
+            nums >> numCustomers;
+            nums >> numProducts;
+
+            int* orders;
+            orders = (int*) malloc(numCustomers * numProducts * sizeof(int));
+            for (int i = 0; i < numCustomers; i++) {
+                getline(inputFile, buffer);
+                istringstream customerOrders(buffer);
+                for (int j = 0; j < numProducts; j++) {
+                    int didOrder;
+                    customerOrders >> didOrder;
+                    orders[mIndex(i, j, numCustomers, numProducts)] = didOrder;
+                }
             }
+
+            cout << "numCustomers: " << numCustomers << endl
+                 << "numProducts: " << numProducts << endl;
+            printOrders(orders, numCustomers, numProducts);
+
+            // Solve
+            clock_t start = clock();
+            if (useBruteForce) {
+                bruteForceSolve(orders, numCustomers, numProducts);
+            }
+            else {
+                dpSolve(orders, numCustomers, numProducts);
+            }
+            clock_t end = clock();
+
+            float seconds = (float)(end - start) / CLOCKS_PER_SEC;
+            cout << "Took " << seconds << " seconds" << endl << endl;
+
+            getline(inputFile, buffer);
         }
-        readFile.close();
+        inputFile.close();
     } else {
         cout << "Not able to open the input file." <<  endl;
     }
-    cout << "numCustomers: " << numCustomers << endl
-         << "numProducts: " << numProducts << endl;
-    printOrders(orders, numCustomers, numProducts);
-
-    clock_t start = clock();
-    if (useBruteForce) {
-        bruteForceSolve(orders, numCustomers, numProducts);
-    }
-    else {
-        dpSolve(orders, numCustomers, numProducts);
-    }
-    clock_t end = clock();
-    float seconds = (float)(end - start) / CLOCKS_PER_SEC;
-    cout << "Took " << seconds << " seconds" << endl;
-
-
     return 0;
 }
