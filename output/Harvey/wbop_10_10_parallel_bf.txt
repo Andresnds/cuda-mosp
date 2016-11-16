@@ -1,0 +1,1206 @@
+Solving by Brute Force...
+buffer: Warwick 81: balanced orders and products, 2 products per order
+numCustomers: 10
+numProducts: 10
+0 0 1 0 1 0 0 0 0 0 
+0 1 0 0 0 0 0 0 0 1 
+0 1 0 0 0 0 0 0 0 1 
+1 0 0 0 0 0 1 0 0 0 
+0 0 0 0 1 0 0 1 0 0 
+0 0 0 1 0 0 0 0 1 0 
+0 0 0 1 0 0 1 0 0 0 
+0 0 1 0 0 1 0 0 0 0 
+1 0 0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 1 1 0 
+numSequences: 3628800
+minStacks: 3
+Best sequence:
+9 1 6 0 5 3 2 4 7 8 
+0 0 0 0 0 0 1 1 0 0 
+1 1 0 0 0 0 0 0 0 0 
+1 1 0 0 0 0 0 0 0 0 
+0 0 1 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 1 0 
+0 0 0 0 0 1 0 0 0 1 
+0 0 1 0 0 1 0 0 0 0 
+0 0 0 0 1 0 1 0 0 0 
+0 0 0 1 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+Open stacks: 3
+Took 8.73 seconds
+
+buffer: Warwick 82: balanced orders and products, 2 products per order
+numCustomers: 10
+numProducts: 10
+1 0 0 0 0 1 0 0 0 0 
+0 1 1 0 0 0 0 0 0 0 
+0 0 0 0 0 1 0 0 1 0 
+0 0 0 0 1 0 0 0 0 1 
+0 0 0 0 1 0 0 0 0 1 
+0 0 0 1 0 0 0 1 0 0 
+0 1 0 0 0 0 1 0 0 0 
+1 0 0 0 0 0 1 0 0 0 
+0 0 1 0 0 0 0 1 0 0 
+0 0 0 1 0 0 0 0 1 0 
+numSequences: 3628800
+minStacks: 3
+Best sequence:
+9 4 7 2 1 6 3 0 5 8 
+0 0 0 0 0 0 0 1 1 0 
+0 0 0 1 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+1 1 0 0 0 0 0 0 0 0 
+1 1 0 0 0 0 0 0 0 0 
+0 0 1 0 0 0 1 0 0 0 
+0 0 0 0 1 1 0 0 0 0 
+0 0 0 0 0 1 0 1 0 0 
+0 0 1 1 0 0 0 0 0 0 
+0 0 0 0 0 0 1 0 0 1 
+Open stacks: 3
+Took 7.81 seconds
+
+buffer: Warwick 83: balanced orders and products, 2 products per order
+numCustomers: 10
+numProducts: 10
+1 0 0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 0 1 1 0 
+0 0 0 1 0 1 0 0 0 0 
+0 0 1 0 0 0 1 0 0 0 
+0 0 1 0 0 0 0 1 0 0 
+1 0 0 1 0 0 0 0 0 0 
+0 1 0 0 1 0 0 0 0 0 
+0 0 0 0 1 0 0 0 0 1 
+0 0 0 0 0 0 1 0 1 0 
+0 1 0 0 0 1 0 0 0 0 
+numSequences: 3628800
+minStacks: 3
+Best sequence:
+9 4 1 5 3 0 2 6 7 8 
+1 0 0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+0 0 0 1 1 0 0 0 0 0 
+0 0 0 0 0 0 1 1 0 0 
+0 0 0 0 0 0 1 0 1 0 
+0 0 0 0 1 1 0 0 0 0 
+0 1 1 0 0 0 0 0 0 0 
+1 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 1 
+0 0 1 1 0 0 0 0 0 0 
+Open stacks: 3
+Took 7.79 seconds
+
+buffer: Warwick 84: balanced orders and products, 2 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 0 0 1 0 1 0 0 
+1 0 0 0 0 0 0 0 0 1 
+0 0 1 0 0 0 0 0 0 1 
+0 0 0 1 0 0 0 0 1 0 
+0 0 0 0 1 0 1 0 0 0 
+1 1 0 0 0 0 0 0 0 0 
+0 1 0 0 1 0 0 0 0 0 
+0 0 1 0 0 0 1 0 0 0 
+0 0 0 0 0 1 0 0 1 0 
+0 0 0 1 0 0 0 1 0 0 
+numSequences: 3628800
+minStacks: 3
+Best sequence:
+9 2 6 0 1 4 7 3 5 8 
+0 0 0 0 0 0 1 0 1 0 
+1 0 0 1 0 0 0 0 0 0 
+1 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 1 
+0 0 1 0 0 1 0 0 0 0 
+0 0 0 1 1 0 0 0 0 0 
+0 0 0 0 1 1 0 0 0 0 
+0 1 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+0 0 0 0 0 0 1 1 0 0 
+Open stacks: 3
+Took 7.81 seconds
+
+buffer: Warwick 85: balanced orders and products, 2 products per order
+numCustomers: 10
+numProducts: 10
+0 1 0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 1 0 1 
+0 0 0 0 1 1 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+0 0 0 1 0 0 0 1 0 0 
+1 0 0 0 0 0 1 0 0 0 
+1 0 0 0 1 0 0 0 0 0 
+0 0 1 0 0 0 0 0 1 0 
+0 0 1 0 0 1 0 0 0 0 
+0 1 0 1 0 0 0 0 0 0 
+numSequences: 3628800
+minStacks: 3
+Best sequence:
+9 7 3 1 6 0 4 5 2 8 
+0 0 0 1 1 0 0 0 0 0 
+1 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 1 1 0 0 
+1 0 0 0 0 0 0 0 0 1 
+0 1 1 0 0 0 0 0 0 0 
+0 0 0 0 1 1 0 0 0 0 
+0 0 0 0 0 1 1 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+0 0 0 0 0 0 0 1 1 0 
+0 0 1 1 0 0 0 0 0 0 
+Open stacks: 3
+Took 7.8 seconds
+
+buffer: Warwick 86: balanced orders and products, 2 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 0 0 1 0 0 0 1 
+1 0 0 0 0 0 0 1 0 0 
+0 0 1 1 0 0 0 0 0 0 
+0 0 0 0 0 1 1 0 0 0 
+0 0 0 1 0 0 1 0 0 0 
+0 0 0 0 0 0 0 1 1 0 
+0 1 0 0 1 0 0 0 0 0 
+1 1 0 0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 0 1 
+0 0 1 0 0 0 0 0 1 0 
+numSequences: 3628800
+minStacks: 3
+Best sequence:
+9 5 6 3 2 4 1 0 7 8 
+1 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 1 0 
+0 0 0 1 1 0 0 0 0 0 
+0 1 1 0 0 0 0 0 0 0 
+0 0 1 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+0 0 0 0 0 1 1 0 0 0 
+0 0 0 0 0 0 1 1 0 0 
+1 0 0 0 0 1 0 0 0 0 
+0 0 0 0 1 0 0 0 0 1 
+Open stacks: 3
+Took 7.8 seconds
+
+buffer: Warwick 87: balanced orders and products, 2 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 0 1 1 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+0 0 0 0 0 0 1 0 0 1 
+0 0 0 1 0 0 0 1 0 0 
+0 0 0 0 0 0 1 0 1 0 
+0 0 0 0 1 0 0 1 0 0 
+1 0 1 0 0 0 0 0 0 0 
+0 1 0 0 0 1 0 0 0 0 
+0 1 1 0 0 0 0 0 0 0 
+1 0 0 1 0 0 0 0 0 0 
+numSequences: 3628800
+minStacks: 3
+Best sequence:
+9 8 6 2 0 3 1 5 4 7 
+0 0 0 0 0 0 0 1 1 0 
+1 1 0 0 0 0 0 0 0 0 
+1 0 1 0 0 0 0 0 0 0 
+0 0 0 0 0 1 0 0 0 1 
+0 1 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+0 0 0 1 1 0 0 0 0 0 
+0 0 0 0 0 0 1 1 0 0 
+0 0 0 1 0 0 1 0 0 0 
+0 0 0 0 1 1 0 0 0 0 
+Open stacks: 3
+Took 7.81 seconds
+
+buffer: Warwick 88: balanced orders and products, 2 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 1 0 1 0 0 0 0 
+0 0 0 0 0 1 0 0 0 1 
+1 0 0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 1 0 0 1 
+0 1 0 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 1 0 1 0 
+0 0 0 1 1 0 0 0 0 0 
+0 1 1 0 0 0 0 0 0 0 
+0 0 1 0 0 0 0 0 1 0 
+numSequences: 3628800
+minStacks: 3
+Best sequence:
+9 6 8 2 1 4 3 5 0 7 
+0 0 0 0 0 0 1 1 0 0 
+1 0 0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 0 0 1 1 
+1 1 0 0 0 0 0 0 0 0 
+0 0 0 0 1 1 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+0 1 1 0 0 0 0 0 0 0 
+0 0 0 0 0 1 1 0 0 0 
+0 0 0 1 1 0 0 0 0 0 
+0 0 1 1 0 0 0 0 0 0 
+Open stacks: 3
+Took 7.81 seconds
+
+buffer: Warwick 89: balanced orders and products, 2 products per order
+numCustomers: 10
+numProducts: 10
+1 0 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 1 0 
+0 0 0 1 0 1 0 0 0 0 
+0 1 1 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 0 1 0 1 
+0 0 0 0 1 0 0 0 1 0 
+0 1 0 0 0 0 1 0 0 0 
+0 0 1 0 0 1 0 0 0 0 
+0 0 0 0 1 0 1 0 0 0 
+numSequences: 3628800
+minStacks: 3
+Best sequence:
+9 0 3 5 2 1 6 4 7 8 
+0 1 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+0 0 1 1 0 0 0 0 0 0 
+0 0 0 0 1 1 0 0 0 0 
+1 1 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 1 0 1 
+0 0 0 0 0 1 1 0 0 0 
+0 0 0 1 1 0 0 0 0 0 
+0 0 0 0 0 0 1 1 0 0 
+Open stacks: 3
+Took 7.8 seconds
+
+buffer: Warwick 90: balanced orders and products, 2 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 0 1 0 0 0 1 0 
+0 1 1 0 0 0 0 0 0 0 
+1 1 0 0 0 0 0 0 0 0 
+0 0 0 1 0 0 1 0 0 0 
+0 0 0 0 0 1 1 0 0 0 
+0 0 0 0 0 1 0 0 0 1 
+0 0 0 0 0 0 0 1 0 1 
+1 0 1 0 0 0 0 0 0 0 
+0 0 0 1 1 0 0 0 0 0 
+0 0 0 0 0 0 0 1 1 0 
+numSequences: 3628800
+minStacks: 3
+Best sequence:
+9 7 8 5 6 4 3 0 1 2 
+0 0 1 0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 
+0 0 0 0 0 0 0 1 1 0 
+0 0 0 0 1 0 1 0 0 0 
+0 0 0 1 1 0 0 0 0 0 
+1 0 0 1 0 0 0 0 0 0 
+1 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 1 
+0 0 0 0 0 1 1 0 0 0 
+0 1 1 0 0 0 0 0 0 0 
+Open stacks: 3
+Took 7.82 seconds
+
+buffer: Warwick 91: balanced orders and products, 3 products per order
+numCustomers: 10
+numProducts: 10
+1 0 0 0 0 1 0 0 1 0 
+0 1 0 0 0 0 0 1 1 0 
+1 1 0 0 0 0 0 1 0 0 
+0 0 1 1 0 0 0 0 0 1 
+0 1 0 0 1 1 0 0 0 0 
+0 0 0 0 0 0 1 1 0 1 
+0 0 1 1 0 0 1 0 0 0 
+0 0 1 0 1 0 0 0 0 1 
+0 0 0 1 0 0 1 0 1 0 
+1 0 0 0 1 1 0 0 0 0 
+numSequences: 3628800
+minStacks: 5
+Best sequence:
+9 6 3 2 8 7 1 4 0 5 
+0 0 0 0 1 0 0 0 1 1 
+0 0 0 0 1 1 1 0 0 0 
+0 0 0 0 0 1 1 0 1 0 
+1 0 1 1 0 0 0 0 0 0 
+0 0 0 0 0 0 1 1 0 1 
+1 1 0 0 0 1 0 0 0 0 
+0 1 1 1 0 0 0 0 0 0 
+1 0 0 1 0 0 0 1 0 0 
+0 1 1 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 1 1 1 
+Open stacks: 5
+Took 7.81 seconds
+
+buffer: Warwick 92: balanced orders and products, 3 products per order
+numCustomers: 10
+numProducts: 10
+0 0 1 0 0 0 0 1 0 1 
+0 0 0 0 1 1 0 1 0 0 
+0 1 0 1 0 0 0 0 1 0 
+0 0 1 0 0 0 0 1 0 1 
+1 0 0 0 1 0 1 0 0 0 
+0 0 0 1 0 0 1 0 1 0 
+0 0 1 0 0 1 0 0 1 0 
+1 1 0 0 1 0 0 0 0 0 
+0 1 0 0 0 1 0 0 0 1 
+1 0 0 1 0 0 1 0 0 0 
+numSequences: 3628800
+minStacks: 5
+Best sequence:
+9 7 5 2 1 4 0 3 6 8 
+1 1 0 1 0 0 0 0 0 0 
+0 1 1 0 0 1 0 0 0 0 
+0 0 0 0 1 0 0 1 0 1 
+1 1 0 1 0 0 0 0 0 0 
+0 0 0 0 0 1 1 0 1 0 
+0 0 0 0 0 0 0 1 1 1 
+0 0 1 1 0 0 0 0 0 1 
+0 0 0 0 1 1 1 0 0 0 
+1 0 1 0 1 0 0 0 0 0 
+0 0 0 0 0 0 1 1 1 0 
+Open stacks: 5
+Took 7.82 seconds
+
+buffer: Warwick 93: balanced orders and products, 3 products per order
+numCustomers: 10
+numProducts: 10
+1 0 0 0 1 0 0 0 0 1 
+0 0 0 0 0 0 1 1 0 1 
+0 1 0 0 0 1 0 0 1 0 
+0 0 0 0 0 1 0 1 1 0 
+0 0 0 0 0 0 1 1 0 1 
+1 0 0 1 0 0 1 0 0 0 
+0 0 1 1 0 0 0 0 1 0 
+0 1 1 1 0 0 0 0 0 0 
+0 0 1 0 1 1 0 0 0 0 
+1 1 0 0 1 0 0 0 0 0 
+numSequences: 3628800
+minStacks: 6
+Best sequence:
+9 7 6 0 3 4 1 2 5 8 
+1 0 0 1 0 1 0 0 0 0 
+1 1 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 1 0 1 1 
+0 1 0 0 0 0 0 0 1 1 
+1 1 1 0 0 0 0 0 0 0 
+0 0 1 1 1 0 0 0 0 0 
+0 0 0 0 1 0 0 1 0 1 
+0 0 0 0 1 0 1 1 0 0 
+0 0 0 0 0 1 0 1 1 0 
+0 0 0 1 0 1 1 0 0 0 
+Open stacks: 6
+Took 7.81 seconds
+
+buffer: Warwick 94: balanced orders and products, 3 products per order
+numCustomers: 10
+numProducts: 10
+1 1 0 0 1 0 0 0 0 0 
+0 1 0 0 0 1 1 0 0 0 
+0 0 0 1 0 0 0 1 0 1 
+1 1 0 0 0 0 0 0 1 0 
+0 0 1 0 0 0 0 1 0 1 
+0 0 1 0 0 0 1 0 1 0 
+0 0 0 1 0 1 1 0 0 0 
+0 0 1 0 1 0 0 1 0 0 
+0 0 0 1 0 1 0 0 0 1 
+1 0 0 0 1 0 0 0 1 0 
+numSequences: 3628800
+minStacks: 5
+Best sequence:
+9 7 3 5 6 2 1 0 4 8 
+0 0 0 0 0 0 1 1 1 0 
+0 0 0 1 1 0 1 0 0 0 
+1 1 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 1 1 0 1 
+1 1 0 0 0 1 0 0 0 0 
+0 0 0 0 1 1 0 0 0 1 
+0 0 1 1 1 0 0 0 0 0 
+0 1 0 0 0 1 0 0 1 0 
+1 0 1 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 1 1 
+Open stacks: 5
+Took 7.82 seconds
+
+buffer: Warwick 95: balanced orders and products, 3 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 1 0 0 1 0 0 1 
+0 1 0 1 0 0 0 0 1 0 
+0 0 0 0 0 1 0 1 0 1 
+1 0 0 0 1 0 0 1 0 0 
+0 0 1 0 1 1 0 0 0 0 
+0 0 0 0 1 0 1 0 0 1 
+1 0 0 0 0 0 1 0 1 0 
+0 1 1 0 0 0 0 1 0 0 
+1 1 0 1 0 0 0 0 0 0 
+0 0 1 0 0 1 0 0 1 0 
+numSequences: 3628800
+minStacks: 6
+Best sequence:
+5 4 2 9 7 6 0 3 1 8 
+0 0 0 1 0 1 0 1 0 0 
+0 0 0 0 0 0 0 1 1 1 
+1 0 0 1 1 0 0 0 0 0 
+0 1 0 0 1 0 1 0 0 0 
+1 1 1 0 0 0 0 0 0 0 
+0 1 0 1 0 1 0 0 0 0 
+0 0 0 0 0 1 1 0 0 1 
+0 0 1 0 1 0 0 0 1 0 
+0 0 0 0 0 0 1 1 1 0 
+1 0 1 0 0 0 0 0 0 1 
+Open stacks: 6
+Took 7.81 seconds
+
+buffer: Warwick 96: balanced orders and products, 3 products per order
+numCustomers: 10
+numProducts: 10
+1 0 0 0 0 0 1 0 0 1 
+0 0 0 0 1 1 0 0 1 0 
+1 1 0 0 0 0 0 0 0 1 
+0 0 0 1 0 0 0 1 1 0 
+0 1 0 0 1 0 1 0 0 0 
+1 0 1 0 0 0 0 0 1 0 
+0 1 0 0 0 0 0 1 0 1 
+0 0 1 1 1 0 0 0 0 0 
+0 0 1 0 0 1 0 1 0 0 
+0 0 0 1 0 1 1 0 0 0 
+numSequences: 3628800
+minStacks: 7
+Best sequence:
+9 6 0 1 3 4 2 5 7 8 
+1 1 1 0 0 0 0 0 0 0 
+0 0 0 0 0 1 0 1 0 1 
+1 0 1 1 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 1 1 
+0 1 0 1 0 1 0 0 0 0 
+0 0 1 0 0 0 1 0 0 1 
+1 0 0 1 0 0 0 0 1 0 
+0 0 0 0 1 1 1 0 0 0 
+0 0 0 0 0 0 1 1 1 0 
+0 1 0 0 1 0 0 1 0 0 
+Open stacks: 7
+Took 7.83 seconds
+
+buffer: Warwick 97: balanced orders and products, 3 products per order
+numCustomers: 10
+numProducts: 10
+0 1 1 1 0 0 0 0 0 0 
+1 0 0 0 0 1 1 0 0 0 
+1 0 0 0 1 0 0 0 0 1 
+0 1 0 0 1 0 1 0 0 0 
+0 1 0 0 0 0 0 1 1 0 
+0 0 1 0 1 1 0 0 0 0 
+0 0 0 0 0 1 0 1 1 0 
+1 0 0 1 0 0 0 0 1 0 
+0 0 0 1 0 0 0 1 0 1 
+0 0 1 0 0 0 1 0 0 1 
+numSequences: 3628800
+minStacks: 7
+Best sequence:
+9 6 2 0 3 4 1 5 7 8 
+0 0 1 0 1 0 1 0 0 0 
+0 1 0 1 0 0 0 1 0 0 
+1 0 0 1 0 1 0 0 0 0 
+0 1 0 0 0 1 1 0 0 0 
+0 0 0 0 0 0 1 0 1 1 
+0 0 1 0 0 1 0 1 0 0 
+0 0 0 0 0 0 0 1 1 1 
+0 0 0 1 1 0 0 0 0 1 
+1 0 0 0 1 0 0 0 1 0 
+1 1 1 0 0 0 0 0 0 0 
+Open stacks: 7
+Took 7.81 seconds
+
+buffer: Warwick 98: balanced orders and products, 3 products per order
+numCustomers: 10
+numProducts: 10
+1 1 0 0 0 0 0 0 1 0 
+0 0 0 0 1 0 0 1 1 0 
+0 1 0 0 1 0 0 0 0 1 
+0 0 0 1 0 0 1 0 1 0 
+1 0 1 0 0 1 0 0 0 0 
+0 0 1 1 0 1 0 0 0 0 
+0 1 0 0 0 0 1 0 0 1 
+0 0 0 1 1 0 1 0 0 0 
+0 0 0 0 0 1 0 1 0 1 
+1 0 1 0 0 0 0 1 0 0 
+numSequences: 3628800
+minStacks: 6
+Best sequence:
+9 6 1 8 4 3 0 5 2 7 
+0 0 1 1 0 0 1 0 0 0 
+0 0 0 1 1 0 0 0 0 1 
+1 0 1 0 1 0 0 0 0 0 
+0 1 0 1 0 1 0 0 0 0 
+0 0 0 0 0 0 1 1 1 0 
+0 0 0 0 0 1 0 1 1 0 
+1 1 1 0 0 0 0 0 0 0 
+0 1 0 0 1 1 0 0 0 0 
+1 0 0 0 0 0 0 1 0 1 
+0 0 0 0 0 0 1 0 1 1 
+Open stacks: 6
+Took 7.82 seconds
+
+buffer: Warwick 99: balanced orders and products, 3 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 0 0 1 1 0 0 1 
+1 0 1 0 0 0 0 0 1 0 
+0 1 0 1 0 0 0 1 0 0 
+0 0 0 1 0 0 1 0 0 1 
+0 0 0 0 1 1 0 1 0 0 
+1 0 0 0 0 0 1 0 0 1 
+0 0 1 0 1 0 0 0 1 0 
+0 1 0 1 0 0 0 0 1 0 
+0 1 0 0 0 1 0 1 0 0 
+1 0 1 0 1 0 0 0 0 0 
+numSequences: 3628800
+minStacks: 5
+Best sequence:
+8 4 2 0 9 6 3 5 7 1 
+0 0 0 0 1 1 0 1 0 0 
+1 0 1 1 0 0 0 0 0 0 
+0 0 0 0 0 0 1 0 1 1 
+0 0 0 0 1 1 1 0 0 0 
+0 1 0 0 0 0 0 1 1 0 
+0 0 0 1 1 1 0 0 0 0 
+1 1 1 0 0 0 0 0 0 0 
+1 0 0 0 0 0 1 0 0 1 
+0 0 0 0 0 0 0 1 1 1 
+0 1 1 1 0 0 0 0 0 0 
+Open stacks: 5
+Took 7.81 seconds
+
+buffer: Warwick 100: balanced orders and products, 3 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 0 1 0 0 0 1 1 
+1 0 0 0 0 1 1 0 0 0 
+0 0 1 0 0 0 1 1 0 0 
+1 1 0 1 0 0 0 0 0 0 
+0 0 0 0 0 1 1 0 0 1 
+0 1 1 0 0 0 0 0 0 1 
+1 1 0 0 0 0 0 1 0 0 
+0 0 1 1 1 0 0 0 0 0 
+0 0 0 1 1 0 0 0 1 0 
+0 0 0 0 0 1 0 1 1 0 
+numSequences: 3628800
+minStacks: 6
+Best sequence:
+9 8 4 3 2 1 5 6 0 7 
+1 1 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 1 1 1 0 
+0 0 0 0 1 0 0 1 0 1 
+0 0 0 1 0 1 0 0 1 0 
+1 0 0 0 0 0 1 1 0 0 
+1 0 0 0 1 1 0 0 0 0 
+0 0 0 0 0 1 0 0 1 1 
+0 0 1 1 1 0 0 0 0 0 
+0 1 1 1 0 0 0 0 0 0 
+0 1 0 0 0 0 1 0 0 1 
+Open stacks: 6
+Took 7.81 seconds
+
+buffer: Warwick 101: balanced orders and products, 4 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 0 0 0 1 1 1 1 
+0 1 1 1 0 0 0 0 0 1 
+0 0 1 0 0 0 0 1 1 1 
+0 0 0 1 1 1 0 1 0 0 
+0 1 0 0 0 1 1 0 1 0 
+1 1 0 0 1 0 0 0 0 1 
+1 0 1 0 0 1 1 0 0 0 
+1 0 0 1 1 0 0 1 0 0 
+1 1 1 0 0 0 0 0 1 0 
+0 0 0 1 1 1 1 0 0 0 
+numSequences: 3628800
+minStacks: 8
+Best sequence:
+9 8 1 0 2 7 5 4 3 6 
+1 1 0 0 0 1 0 0 0 1 
+1 0 1 0 1 0 0 0 1 0 
+1 1 0 0 1 1 0 0 0 0 
+0 0 0 0 0 1 1 1 1 0 
+0 1 1 0 0 0 1 0 0 1 
+1 0 1 1 0 0 0 1 0 0 
+0 0 0 1 1 0 1 0 0 1 
+0 0 0 1 0 1 0 1 1 0 
+0 1 1 1 1 0 0 0 0 0 
+0 0 0 0 0 0 1 1 1 1 
+Open stacks: 8
+Took 7.83 seconds
+
+buffer: Warwick 102: balanced orders and products, 4 products per order
+numCustomers: 10
+numProducts: 10
+0 1 1 0 0 0 0 1 0 1 
+1 0 0 0 0 1 1 0 0 1 
+1 1 1 0 0 0 1 0 0 0 
+0 0 0 1 1 1 0 0 1 0 
+0 0 1 0 1 0 0 1 1 0 
+0 1 0 1 0 0 1 1 0 0 
+0 0 0 0 0 1 1 1 0 1 
+1 0 0 1 1 0 0 0 1 0 
+0 1 1 0 1 0 0 0 0 1 
+1 0 0 1 0 1 0 0 1 0 
+numSequences: 3628800
+minStacks: 8
+Best sequence:
+9 7 1 2 4 3 5 0 6 8 
+1 1 1 1 0 0 0 0 0 0 
+1 0 0 0 0 0 1 1 1 0 
+0 0 1 1 0 0 0 1 1 0 
+0 0 0 0 1 1 1 0 0 1 
+0 1 0 1 1 0 0 0 0 1 
+0 1 1 0 0 1 0 0 1 0 
+1 1 0 0 0 0 1 0 1 0 
+0 0 0 0 1 1 0 1 0 1 
+1 0 1 1 1 0 0 0 0 0 
+0 0 0 0 0 1 1 1 0 1 
+Open stacks: 8
+Took 7.83 seconds
+
+buffer: Warwick 103: balanced orders and products, 4 products per order
+numCustomers: 10
+numProducts: 10
+1 0 0 0 1 0 0 1 1 0 
+0 0 1 0 0 1 1 0 1 0 
+1 1 1 0 0 0 0 0 1 0 
+0 1 0 1 0 0 1 1 0 0 
+0 0 0 1 1 1 0 0 0 1 
+1 0 0 1 0 0 0 1 1 0 
+0 0 0 1 0 1 1 0 0 1 
+0 1 0 0 1 0 1 0 0 1 
+0 0 1 0 1 0 0 1 0 1 
+1 1 1 0 0 1 0 0 0 0 
+numSequences: 3628800
+minStacks: 8
+Best sequence:
+9 6 5 3 4 1 0 2 7 8 
+0 0 0 0 1 0 1 0 1 1 
+0 1 1 0 0 0 0 1 0 1 
+0 0 0 0 0 1 1 1 0 1 
+0 1 0 1 0 1 0 0 1 0 
+1 0 1 1 1 0 0 0 0 0 
+0 0 0 1 0 0 1 0 1 1 
+1 1 1 1 0 0 0 0 0 0 
+1 1 0 0 1 1 0 0 0 0 
+1 0 0 0 1 0 0 1 1 0 
+0 0 1 0 0 1 1 1 0 0 
+Open stacks: 8
+Took 7.84 seconds
+
+buffer: Warwick 104: balanced orders and products, 4 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 1 1 0 0 1 1 0 
+0 0 1 0 1 1 0 0 1 0 
+1 0 1 1 0 0 0 0 0 1 
+0 1 0 1 1 0 0 0 0 1 
+1 0 1 0 1 1 0 0 0 0 
+1 1 0 0 0 0 1 0 1 0 
+0 1 0 0 0 0 1 1 0 1 
+0 1 0 1 0 1 1 0 0 0 
+1 0 0 0 0 1 0 1 0 1 
+0 0 1 0 0 0 1 1 1 0 
+numSequences: 3628800
+minStacks: 9
+Best sequence:
+9 4 1 0 3 2 5 6 7 8 
+0 1 0 0 1 0 0 0 1 1 
+0 1 0 0 0 1 1 0 0 1 
+1 0 0 1 1 1 0 0 0 0 
+1 1 1 0 1 0 0 0 0 0 
+0 1 0 1 0 1 1 0 0 0 
+0 0 1 1 0 0 0 1 0 1 
+1 0 1 0 0 0 0 1 1 0 
+0 0 1 0 1 0 1 1 0 0 
+1 0 0 1 0 0 1 0 1 0 
+0 0 0 0 0 1 0 1 1 1 
+Open stacks: 9
+Took 7.83 seconds
+
+buffer: Warwick 105: balanced orders and products, 4 products per order
+numCustomers: 10
+numProducts: 10
+0 1 0 1 0 1 0 0 1 0 
+1 0 1 0 0 0 0 0 1 1 
+1 1 0 1 0 1 0 0 0 0 
+0 1 1 0 1 0 0 0 0 1 
+1 0 0 1 0 0 1 1 0 0 
+1 0 0 0 0 1 1 0 0 1 
+0 0 0 1 1 0 0 1 0 1 
+0 0 1 0 1 1 0 0 1 0 
+0 0 1 0 0 0 1 1 1 0 
+0 1 0 0 1 0 1 1 0 0 
+numSequences: 3628800
+minStacks: 9
+Best sequence:
+9 4 1 2 0 3 5 6 7 8 
+0 0 1 0 0 1 1 0 0 1 
+1 0 0 1 1 0 0 0 0 1 
+0 0 1 0 1 1 1 0 0 0 
+1 1 1 1 0 0 0 0 0 0 
+0 0 0 0 1 1 0 1 1 0 
+1 0 0 0 1 0 1 1 0 0 
+1 1 0 0 0 1 0 0 1 0 
+0 1 0 1 0 0 1 0 0 1 
+0 0 0 1 0 0 0 1 1 1 
+0 1 1 0 0 0 0 1 1 0 
+Open stacks: 9
+Took 7.83 seconds
+
+buffer: Warwick 106: balanced orders and products, 4 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 0 0 1 0 1 1 1 
+0 0 1 0 0 1 1 0 1 0 
+0 1 1 0 1 1 0 0 0 0 
+1 1 0 0 0 0 0 1 0 1 
+1 0 0 0 1 0 0 0 1 1 
+0 0 1 1 0 0 0 1 0 1 
+1 0 1 1 1 0 0 0 0 0 
+1 1 0 1 0 0 1 0 0 0 
+0 0 0 0 0 1 1 1 1 0 
+0 1 0 1 1 0 1 0 0 0 
+numSequences: 3628800
+minStacks: 8
+Best sequence:
+9 8 7 5 6 2 3 1 0 4 
+1 1 1 1 0 0 0 0 0 0 
+0 1 0 1 1 1 0 0 0 0 
+0 0 0 1 0 1 0 1 0 1 
+1 0 1 0 0 0 0 1 1 0 
+1 1 0 0 0 0 0 0 1 1 
+1 0 1 0 0 1 1 0 0 0 
+0 0 0 0 0 1 1 0 1 1 
+0 0 0 0 1 0 1 1 1 0 
+0 1 1 1 1 0 0 0 0 0 
+0 0 0 0 1 0 1 1 0 1 
+Open stacks: 8
+Took 7.83 seconds
+
+buffer: Warwick 107: balanced orders and products, 4 products per order
+numCustomers: 10
+numProducts: 10
+0 1 1 0 0 1 0 1 0 0 
+1 1 0 1 0 0 1 0 0 0 
+1 0 0 0 0 1 1 0 1 0 
+0 0 1 1 1 0 0 0 0 1 
+0 1 0 1 0 0 0 0 1 1 
+0 0 0 0 1 1 1 0 1 0 
+1 0 1 0 0 0 0 1 0 1 
+0 1 0 1 0 0 1 1 0 0 
+0 0 1 0 1 0 0 0 1 1 
+1 0 0 0 1 1 0 1 0 0 
+numSequences: 3628800
+minStacks: 9
+Best sequence:
+9 4 1 2 3 0 5 6 7 8 
+0 0 1 1 0 0 1 0 1 0 
+0 0 1 0 1 1 0 1 0 0 
+0 0 0 0 0 1 1 1 0 1 
+1 1 0 1 1 0 0 0 0 0 
+1 0 1 0 1 0 0 0 0 1 
+0 1 0 0 0 0 1 1 0 1 
+1 0 0 1 0 1 0 0 1 0 
+0 0 1 0 1 0 0 1 1 0 
+1 1 0 1 0 0 0 0 0 1 
+0 1 0 0 0 1 1 0 1 0 
+Open stacks: 9
+Took 7.83 seconds
+
+buffer: Warwick 108: balanced orders and products, 4 products per order
+numCustomers: 10
+numProducts: 10
+1 0 0 1 0 0 0 1 0 1 
+0 1 0 0 1 0 0 1 1 0 
+0 0 0 1 1 0 1 0 1 0 
+0 0 1 0 0 1 1 0 1 0 
+1 1 0 0 0 0 1 1 0 0 
+1 0 1 0 0 1 0 0 0 1 
+0 1 1 1 0 0 0 0 0 1 
+0 0 0 0 1 0 1 0 1 1 
+1 0 0 1 0 1 0 1 0 0 
+0 1 1 0 1 1 0 0 0 0 
+numSequences: 3628800
+minStacks: 9
+Best sequence:
+9 5 0 2 3 1 4 6 7 8 
+1 0 1 0 1 0 0 0 1 0 
+0 0 0 0 0 1 1 0 1 1 
+0 0 0 0 1 0 1 1 0 1 
+0 1 0 1 0 0 0 1 0 1 
+0 0 1 0 0 1 0 1 1 0 
+1 1 1 1 0 0 0 0 0 0 
+1 0 0 1 1 1 0 0 0 0 
+1 0 0 0 0 0 1 1 0 1 
+0 1 1 0 1 0 0 0 1 0 
+0 1 0 1 0 1 1 0 0 0 
+Open stacks: 9
+Took 7.83 seconds
+
+buffer: Warwick 109: balanced orders and products, 4 products per order
+numCustomers: 10
+numProducts: 10
+0 1 0 0 1 1 1 0 0 0 
+1 1 0 0 1 0 1 0 0 0 
+0 0 0 0 1 0 0 1 1 1 
+0 0 1 1 0 0 1 0 0 1 
+0 1 1 0 0 0 1 1 0 0 
+0 1 0 0 0 1 0 0 1 1 
+1 0 1 1 0 0 0 0 1 0 
+1 0 0 0 0 1 0 1 1 0 
+1 0 1 1 0 1 0 0 0 0 
+0 0 0 1 1 0 0 1 0 1 
+numSequences: 3628800
+minStacks: 9
+Best sequence:
+9 6 1 2 3 4 0 5 7 8 
+0 1 1 0 0 1 0 1 0 0 
+0 1 1 0 0 1 1 0 0 0 
+1 0 0 0 0 1 0 0 1 1 
+1 1 0 1 1 0 0 0 0 0 
+0 1 1 1 0 0 0 0 1 0 
+1 0 1 0 0 0 0 1 0 1 
+0 0 0 1 1 0 1 0 0 1 
+0 0 0 0 0 0 1 1 1 1 
+0 0 0 1 1 0 1 1 0 0 
+1 0 0 0 1 1 0 0 1 0 
+Open stacks: 9
+Took 7.83 seconds
+
+buffer: Warwick 110: balanced orders and products, 4 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 0 1 0 0 1 1 1 
+0 1 1 0 0 1 0 0 0 1 
+0 1 1 0 0 0 1 0 1 0 
+1 0 1 0 1 1 0 0 0 0 
+1 0 0 1 1 0 0 1 0 0 
+1 0 1 0 0 1 0 0 1 0 
+0 1 0 1 1 0 0 0 0 1 
+0 0 0 1 0 0 1 0 1 1 
+0 0 0 1 0 1 1 1 0 0 
+1 1 0 0 0 0 1 1 0 0 
+numSequences: 3628800
+minStacks: 9
+Best sequence:
+9 4 3 1 0 2 5 6 7 8 
+1 1 0 0 0 0 0 0 1 1 
+1 0 0 1 0 1 1 0 0 0 
+0 0 0 1 0 1 0 1 0 1 
+0 1 0 0 1 1 1 0 0 0 
+0 1 1 0 1 0 0 0 1 0 
+0 0 0 0 1 1 1 0 0 1 
+1 1 1 1 0 0 0 0 0 0 
+1 0 1 0 0 0 0 1 0 1 
+0 0 1 0 0 0 1 1 1 0 
+0 0 0 1 1 0 0 1 1 0 
+Open stacks: 9
+Took 7.83 seconds
+
+buffer: Warwick 111: balanced orders and products, 5 products per order
+numCustomers: 10
+numProducts: 10
+1 0 1 0 0 1 0 1 1 0 
+1 0 0 0 1 0 0 1 1 1 
+1 1 1 0 0 1 1 0 0 0 
+0 1 0 1 1 0 0 0 1 1 
+1 0 0 1 1 0 1 1 0 0 
+0 1 1 0 0 1 1 0 0 1 
+0 0 1 1 0 1 1 1 0 0 
+0 0 1 1 0 0 0 1 1 1 
+1 1 0 1 1 1 0 0 0 0 
+0 1 0 0 1 0 1 0 1 1 
+numSequences: 3628800
+minStacks: 10
+Best sequence:
+9 0 1 2 3 4 5 6 7 8 
+0 1 0 1 0 0 1 0 1 1 
+1 1 0 0 0 1 0 0 1 1 
+0 1 1 1 0 0 1 1 0 0 
+1 0 1 0 1 1 0 0 0 1 
+0 1 0 0 1 1 0 1 1 0 
+1 0 1 1 0 0 1 1 0 0 
+0 0 0 1 1 0 1 1 1 0 
+1 0 0 1 1 0 0 0 1 1 
+0 1 1 0 1 1 1 0 0 0 
+1 0 1 0 0 1 0 1 0 1 
+Open stacks: 10
+Took 7.84 seconds
+
+buffer: Warwick 112: balanced orders and products, 5 products per order
+numCustomers: 10
+numProducts: 10
+1 1 1 0 1 0 0 1 0 0 
+0 0 1 1 1 1 1 0 0 0 
+0 1 1 0 0 1 0 1 1 0 
+0 0 1 1 0 1 1 0 0 1 
+1 1 0 0 1 1 0 0 0 1 
+1 0 1 0 0 1 1 0 1 0 
+0 0 0 1 1 0 1 1 0 1 
+0 1 0 1 1 0 1 0 1 0 
+1 0 0 1 0 0 0 1 1 1 
+1 1 0 0 0 0 0 1 1 1 
+numSequences: 3628800
+minStacks: 9
+Best sequence:
+9 8 7 0 1 4 5 2 3 6 
+0 0 1 1 1 1 0 1 0 0 
+0 0 0 0 0 1 1 1 1 1 
+0 1 1 0 1 0 1 1 0 0 
+1 0 0 0 0 0 1 1 1 1 
+1 0 0 1 1 1 1 0 0 0 
+0 1 0 1 0 0 1 1 0 1 
+1 0 1 0 0 1 0 0 1 1 
+0 1 0 0 1 1 0 0 1 1 
+1 1 1 1 0 0 0 0 1 0 
+1 1 1 1 1 0 0 0 0 0 
+Open stacks: 9
+Took 7.86 seconds
+
+buffer: Warwick 113: balanced orders and products, 5 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 0 1 1 1 1 1 0 
+1 0 1 0 1 0 0 1 0 1 
+0 1 1 1 0 1 1 0 0 0 
+1 1 0 0 1 0 0 0 1 1 
+0 1 1 1 0 1 1 0 0 0 
+0 1 0 0 1 0 0 1 1 1 
+1 0 0 0 0 1 0 1 1 1 
+0 1 0 1 0 1 1 1 0 0 
+1 0 1 1 0 0 0 0 1 1 
+1 0 1 1 1 0 1 0 0 0 
+numSequences: 3628800
+minStacks: 10
+Best sequence:
+9 0 1 2 3 4 5 6 7 8 
+0 0 0 0 0 1 1 1 1 1 
+1 1 0 1 0 1 0 0 1 0 
+0 0 1 1 1 0 1 1 0 0 
+1 1 1 0 0 1 0 0 0 1 
+0 0 1 1 1 0 1 1 0 0 
+1 0 1 0 0 1 0 0 1 1 
+1 1 0 0 0 0 1 0 1 1 
+0 0 1 0 1 0 1 1 1 0 
+1 1 0 1 1 0 0 0 0 1 
+0 1 0 1 1 1 0 1 0 0 
+Open stacks: 10
+Took 7.87 seconds
+
+buffer: Warwick 114: balanced orders and products, 5 products per order
+numCustomers: 10
+numProducts: 10
+0 1 0 0 1 1 0 0 1 1 
+1 0 1 1 0 0 1 0 1 0 
+1 1 0 0 0 1 0 1 1 0 
+0 0 1 0 1 1 1 0 1 0 
+1 1 0 0 1 0 0 1 0 1 
+0 0 1 1 0 1 1 0 0 1 
+1 1 0 0 1 0 1 1 0 0 
+0 0 1 1 0 0 1 1 0 1 
+0 1 0 1 1 1 0 0 1 0 
+1 0 1 1 0 0 0 1 0 1 
+numSequences: 3628800
+minStacks: 10
+Best sequence:
+9 0 1 2 3 4 5 6 7 8 
+1 0 1 0 0 1 1 0 0 1 
+0 1 0 1 1 0 0 1 0 1 
+0 1 1 0 0 0 1 0 1 1 
+0 0 0 1 0 1 1 1 0 1 
+1 1 1 0 0 1 0 0 1 0 
+1 0 0 1 1 0 1 1 0 0 
+0 1 1 0 0 1 0 1 1 0 
+1 0 0 1 1 0 0 1 1 0 
+0 0 1 0 1 1 1 0 0 1 
+1 1 0 1 1 0 0 0 1 0 
+Open stacks: 10
+Took 7.85 seconds
+
+buffer: Warwick 115: balanced orders and products, 5 products per order
+numCustomers: 10
+numProducts: 10
+1 0 0 0 1 0 1 0 1 1 
+1 0 1 0 0 1 0 1 0 1 
+0 1 0 0 0 1 1 1 0 1 
+0 1 0 1 0 1 1 0 1 0 
+1 0 1 0 1 0 0 1 1 0 
+1 1 0 1 0 0 0 0 1 1 
+0 0 1 1 1 1 0 1 0 0 
+0 1 1 1 1 0 1 0 0 0 
+0 0 1 0 1 1 1 0 1 0 
+1 1 0 1 0 0 0 1 0 1 
+numSequences: 3628800
+minStacks: 9
+Best sequence:
+9 7 0 1 3 4 5 2 6 8 
+1 0 1 0 0 1 0 0 1 1 
+1 1 1 0 0 0 1 1 0 0 
+1 1 0 1 0 0 1 0 1 0 
+0 0 0 1 1 0 1 0 1 1 
+0 1 1 0 0 1 0 1 0 1 
+1 0 1 1 1 0 0 0 0 1 
+0 1 0 0 1 1 1 1 0 0 
+0 0 0 1 1 1 0 1 1 0 
+0 0 0 0 0 1 1 1 1 1 
+1 1 1 1 1 0 0 0 0 0 
+Open stacks: 9
+Took 7.86 seconds
+
+buffer: Warwick 116: balanced orders and products, 5 products per order
+numCustomers: 10
+numProducts: 10
+0 0 1 1 1 0 0 1 1 0 
+1 0 0 1 0 1 1 0 0 1 
+0 0 1 1 0 1 0 0 1 1 
+0 1 0 0 1 0 1 1 1 0 
+1 1 0 1 1 0 1 0 0 0 
+1 0 1 0 0 1 0 1 0 1 
+1 1 0 0 0 1 1 0 0 1 
+0 0 1 1 1 0 0 1 0 1 
+0 1 1 0 1 0 0 1 1 0 
+1 1 0 0 0 1 1 0 1 0 
+numSequences: 3628800
+minStacks: 9
+Best sequence:
+9 6 5 0 3 1 2 4 7 8 
+0 0 0 0 1 0 1 1 1 1 
+1 1 1 1 1 0 0 0 0 0 
+1 0 1 0 1 0 1 0 0 1 
+0 1 0 0 0 1 0 1 1 1 
+0 1 0 1 1 1 0 1 0 0 
+1 0 1 1 0 0 1 0 1 0 
+1 1 1 1 0 1 0 0 0 0 
+1 0 0 0 1 0 1 1 1 0 
+0 0 0 0 0 1 1 1 1 1 
+0 1 1 1 0 1 0 0 0 1 
+Open stacks: 9
+Took 7.85 seconds
+
+buffer: Warwick 117: balanced orders and products, 5 products per order
+numCustomers: 10
+numProducts: 10
+0 0 1 0 1 1 0 0 1 1 
+1 1 1 0 0 0 1 0 0 1 
+0 0 0 1 1 0 1 1 0 1 
+0 1 1 1 0 0 1 1 0 0 
+0 1 0 1 0 1 0 1 1 0 
+1 1 1 0 1 0 0 0 1 0 
+1 0 0 0 1 1 0 0 1 1 
+1 0 0 1 0 1 1 0 1 0 
+1 0 1 1 1 0 0 1 0 0 
+0 1 0 0 0 1 1 1 0 1 
+numSequences: 3628800
+minStacks: 9
+Best sequence:
+9 8 5 4 0 1 3 6 2 7 
+1 1 1 1 0 0 0 0 1 0 
+1 0 0 0 1 1 0 1 1 0 
+1 0 0 1 0 0 1 1 0 1 
+0 0 0 0 0 1 1 1 1 1 
+0 1 1 0 0 1 1 0 0 1 
+0 1 0 1 1 1 0 0 1 0 
+1 1 1 1 1 0 0 0 0 0 
+0 1 1 0 1 0 1 1 0 0 
+0 0 0 1 1 0 1 0 1 1 
+1 0 1 0 0 1 0 1 0 1 
+Open stacks: 9
+Took 7.86 seconds
+
+buffer: Warwick 118: balanced orders and products, 5 products per order
+numCustomers: 10
+numProducts: 10
+0 1 1 1 0 0 0 0 1 1 
+0 1 0 1 1 1 1 0 0 0 
+1 0 1 0 0 0 1 1 0 1 
+0 1 0 0 0 0 1 1 1 1 
+1 0 1 0 0 0 1 1 0 1 
+1 0 0 1 1 0 0 1 1 0 
+1 0 0 1 1 1 0 1 0 0 
+0 1 0 0 0 1 1 0 1 1 
+1 0 1 0 1 1 0 0 1 0 
+0 1 1 1 1 1 0 0 0 0 
+numSequences: 3628800
+minStacks: 10
+Best sequence:
+9 0 1 2 3 4 5 6 7 8 
+1 0 1 1 1 0 0 0 0 1 
+0 0 1 0 1 1 1 1 0 0 
+1 1 0 1 0 0 0 1 1 0 
+1 0 1 0 0 0 0 1 1 1 
+1 1 0 1 0 0 0 1 1 0 
+0 1 0 0 1 1 0 0 1 1 
+0 1 0 0 1 1 1 0 1 0 
+1 0 1 0 0 0 1 1 0 1 
+0 1 0 1 0 1 1 0 0 1 
+0 0 1 1 1 1 1 0 0 0 
+Open stacks: 10
+Took 7.85 seconds
+
+buffer: Warwick 119: balanced orders and products, 5 products per order
+numCustomers: 10
+numProducts: 10
+0 0 0 1 1 0 1 0 1 1 
+0 0 1 1 1 1 0 0 0 1 
+0 1 1 1 0 0 1 1 0 0 
+1 1 1 0 0 0 1 0 0 1 
+1 1 0 0 1 0 0 1 0 1 
+0 1 1 0 0 1 1 0 1 0 
+1 1 1 1 0 1 0 0 0 0 
+0 0 0 0 1 1 1 1 1 0 
+1 0 0 0 1 1 0 1 1 0 
+1 0 0 1 0 0 0 1 1 1 
+numSequences: 3628800
+minStacks: 10
+Best sequence:
+9 0 1 2 3 4 5 6 7 8 
+1 0 0 0 1 1 0 1 0 1 
+1 0 0 1 1 1 1 0 0 0 
+0 0 1 1 1 0 0 1 1 0 
+1 1 1 1 0 0 0 1 0 0 
+1 1 1 0 0 1 0 0 1 0 
+0 0 1 1 0 0 1 1 0 1 
+0 1 1 1 1 0 1 0 0 0 
+0 0 0 0 0 1 1 1 1 1 
+0 1 0 0 0 1 1 0 1 1 
+1 1 0 0 1 0 0 0 1 1 
+Open stacks: 10
+Took 7.85 seconds
+
+buffer: Warwick 120: balanced orders and products, 5 products per order
+numCustomers: 10
+numProducts: 10
+0 0 1 0 0 0 1 1 1 1 
+0 1 1 1 0 1 1 0 0 0 
+1 1 0 0 1 0 0 1 1 0 
+1 0 0 0 1 1 0 0 1 1 
+0 1 1 0 0 0 1 1 0 1 
+0 0 1 1 0 1 1 0 1 0 
+1 0 1 1 0 0 0 1 0 1 
+1 0 0 0 1 1 1 0 0 1 
+1 1 0 1 1 0 0 0 1 0 
+0 1 0 1 1 1 0 1 0 0 
+numSequences: 3628800
+minStacks: 10
+Best sequence:
+9 0 1 2 3 4 5 6 7 8 
+1 0 0 1 0 0 0 1 1 1 
+0 0 1 1 1 0 1 1 0 0 
+0 1 1 0 0 1 0 0 1 1 
+1 1 0 0 0 1 1 0 0 1 
+1 0 1 1 0 0 0 1 1 0 
+0 0 0 1 1 0 1 1 0 1 
+1 1 0 1 1 0 0 0 1 0 
+1 1 0 0 0 1 1 1 0 0 
+0 1 1 0 1 1 0 0 0 1 
+0 0 1 0 1 1 1 0 1 0 
+Open stacks: 10
+Took 7.85 seconds
+
+Solved: 40 instances
+totalTime: 313.98 seconds
+minTime: 7.79 seconds
+maxTime: 8.73 seconds
+Average: 7.8495 seconds

@@ -1,0 +1,72 @@
+Solving by Brute Force...
+buffer: 20 40
+numCustomers: 1
+numProducts: 0
+
+Best Sequence: 
+
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+numCustomers: 0
+numProducts: 1
+Best Sequence: 
+0 
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+numCustomers: 0
+numProducts: 0
+Best Sequence: 
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 
+numCustomers: 0
+numProducts: 0
+Best Sequence: 
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 
+numCustomers: 0
+numProducts: 0
+Best Sequence: 
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 0 0 0 
+numCustomers: 0
+numProducts: 0
+Best Sequence: 
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0
+numCustomers: 0
+numProducts: 0
+Best Sequence: 
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 
+numCustomers: 0
+numProducts: 0
+Best Sequence: 
+
+OpenStacks: 0
+Took 0 seconds
+
+Solved: 8 instances
+totalTime: 0 seconds
+minTime: 0 seconds
+maxTime: 0 seconds
+Average: 0 seconds

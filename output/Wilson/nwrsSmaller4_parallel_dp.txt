@@ -1,0 +1,168 @@
+Solving by Dynamic Programming...
+buffer: 
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0.87 seconds
+
+buffer: 0  0  1  0  1  0  0  0  0  1  1  0  0  0  0  0  1  0  0  0
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  1  1  0  0  0  0  0  0  1  1  0  1  0  0  0  0  0  0  0
+numCustomers: 1
+numProducts: 0
+
+Best sequence:
+
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 1  0  0  0  0  0  0  0  1  0  0  0  0  0  1  0  0  0  0  0
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  1  0  0  0  0  0  1  0  0  0  0  0  0  0  0  1  0  0  0
+numCustomers: 1
+numProducts: 0
+
+Best sequence:
+
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  1
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 1  0  1  0  0  1  0  0  0  0  0  0  1  1  0  0  0  0  0  0
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  1  0  0  0  0  0  0  1  1  0  1  0  0  0  0  0  0  0  0  0  0  1  1  0
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  1  0  1  0  0  0  0  0  0  0  1  0  0  0  0  1  0  1  0  0  0  0  0  1
+numCustomers: 1
+numProducts: 0
+
+Best sequence:
+
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  0  0  0  0  1  1  0  0  0  0  0  1  0  1  1  0  0  0  0  1  0  0  0  0
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  0  0  1  0  0  0  1  0  0  0  0  0  1  0  0  1  0  0  1  0  0  0  0  1
+numCustomers: 1
+numProducts: 0
+
+Best sequence:
+
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  1  0  1  0  0  0  1  0  0  0  1  0  0  0  0  1  1  0  0  0  0  0  0  0
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 15 25
+numCustomers: 1
+numProducts: 0
+
+Best sequence:
+
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  0  0  0  0  0  0  0  1  0  1  0  0  1  0  0  1  1  0  0  1  0  0  0  0
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  1  1  0  0  1  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  1  0  1  0
+numCustomers: 0
+numProducts: 1
+Best sequence:
+-1 
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  0  0  1  0  0  0  0  0  0  0  0  0  1  1  0  1  0  1  0  1  0  0  0  0
+numCustomers: 0
+numProducts: 1
+Best sequence:
+-1 
+OpenStacks: 0
+Took 0 seconds
+
+buffer: 0  0  0  1  0  0  0  0  0  0  0  0  0  1  1  0  1  0  1  0  1  0  0  0  0
+numCustomers: 0
+numProducts: 0
+Best sequence:
+
+OpenStacks: 0
+Took 0.01 seconds
+
+Solved: 19 instances
+totalTime: 0.88 seconds
+minTime: 0 seconds
+maxTime: 0.87 seconds
+Average: 0.0463158 seconds
