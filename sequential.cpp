@@ -281,60 +281,65 @@ int main(int argc, char** argv) {
         exit(EXIT_FAILURE);
     }
 
-    string inputFilename;
-    inputFilename = argv[2];
-    cout << "Reading from " << inputFilename << endl;
+    float totalTime = 0;
+    float numInstances = 0;
+    float minTime = 1000000;
+    float maxTime = 0;
 
-    ifstream inputFile;
-    inputFile.open(inputFilename);
     string buffer;
-    if (inputFile.is_open()) {
-        while (getline(inputFile, buffer)) {
-            // Read input
-            cout << "buffer: " << buffer << endl;
-            getline(inputFile, buffer);
+    while (getline(cin, buffer)) {
+        // Read input
+        cout << "buffer: " << buffer << endl;
+        getline(cin, buffer);
 
-            int numCustomers = 0, numProducts = 0;
-            istringstream nums(buffer);
-            nums >> numCustomers;
-            nums >> numProducts;
+        int numCustomers = 0, numProducts = 0;
+        istringstream nums(buffer);
+        nums >> numCustomers;
+        nums >> numProducts;
 
-            vector<vector<int>> orders;
-            for (int i = 0; i < numCustomers; i++) {
-                getline(inputFile, buffer);
-                istringstream customerOrders(buffer);
-                vector<int> v;
-                for (int j = 0; j < numProducts; j++) {
-                    int didOrder;
-                    customerOrders >> didOrder;
-                    v.push_back(didOrder);
-                }
-                orders.push_back(v);
+        vector<vector<int>> orders;
+        for (int i = 0; i < numCustomers; i++) {
+            getline(cin, buffer);
+            istringstream customerOrders(buffer);
+            vector<int> v;
+            for (int j = 0; j < numProducts; j++) {
+                int didOrder;
+                customerOrders >> didOrder;
+                v.push_back(didOrder);
             }
-
-            cout << "numCustomers: " << numCustomers << endl
-                 << "numProducts: " << numProducts << endl;
-            printOrders(orders);
-            resetCache();
-
-            // Solve
-            clock_t start = clock();
-            if (useBruteForce) {
-                bruteForceSolve(orders, numCustomers, numProducts);
-            }
-            else {
-                dpSolve(orders, numCustomers, numProducts);
-            }
-            clock_t end = clock();
-
-            float seconds = (float)(end - start) / CLOCKS_PER_SEC;
-            cout << "Took " << seconds << " seconds" << endl << endl;
-
-            getline(inputFile, buffer);
+            orders.push_back(v);
         }
-        inputFile.close();
-    } else {
-        cout << "Not able to open the input file." <<  endl;
+
+        cout << "numCustomers: " << numCustomers << endl
+             << "numProducts: " << numProducts << endl;
+        printOrders(orders);
+        resetCache();
+
+        // Solve
+        clock_t start = clock();
+        if (useBruteForce) {
+            bruteForceSolve(orders, numCustomers, numProducts);
+        }
+        else {
+            dpSolve(orders, numCustomers, numProducts);
+        }
+        clock_t end = clock();
+
+        float time = (float)(end - start) / CLOCKS_PER_SEC;
+        cout << "Took " << time << " seconds" << endl << endl;
+        totalTime += time;
+        numInstances++;
+        minTime = (time < minTime) ? time : minTime;
+        maxTime = (time > maxTime) ? time : maxTime;
+
+        getline(cin, buffer);
     }
+
+    cout << "Solved: " << numInstances << " instances" << endl;
+    cout << "totalTime: " << totalTime << " seconds" << endl;
+    cout << "minTime: " << minTime << " seconds" << endl;
+    cout << "maxTime: " << maxTime << " seconds" << endl;
+    cout << "Average: " << totalTime/numInstances << " seconds" << endl;
+
     return 0;
 }
