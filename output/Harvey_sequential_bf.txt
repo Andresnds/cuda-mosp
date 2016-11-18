@@ -1,0 +1,210 @@
+wbo_10_10_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_10_20_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_10_30_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_15_15_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_15_30_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_20_10_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_20_20_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_30_10_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_30_15_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_30_30_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_10_10_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_10_20_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_10_30_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_15_15_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_15_30_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_20_10_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_20_20_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_30_10_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_30_15_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_30_30_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_10_10_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_10_20_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_10_30_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_15_15_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_15_30_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_20_10_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_20_20_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_30_10_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_30_15_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_30_30_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+

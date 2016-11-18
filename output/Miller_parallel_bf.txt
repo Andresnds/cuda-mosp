@@ -1,0 +1,7 @@
+Miller19_parallel_bf.txt
+Solved: 8 instances
+totalTime: 0.8 seconds
+minTime: 0 seconds
+maxTime: 0.8 seconds
+Average: 0.1 seconds
+

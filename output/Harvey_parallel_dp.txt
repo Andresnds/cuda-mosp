@@ -1,0 +1,210 @@
+wbo_10_10_parallel_dp.txt
+Solved: 40 instances
+totalTime: 2.34 seconds
+minTime: 0.02 seconds
+maxTime: 1.35 seconds
+Average: 0.0585 seconds
+
+wbo_10_20_parallel_dp.txt
+Solved: 40 instances
+totalTime: 120.51 seconds
+minTime: 2.98 seconds
+maxTime: 3.76 seconds
+Average: 3.01275 seconds
+
+wbo_10_30_parallel_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbo_15_15_parallel_dp.txt
+Solved: 60 instances
+totalTime: 37.59 seconds
+minTime: 0.6 seconds
+maxTime: 1.66 seconds
+Average: 0.6265 seconds
+
+wbo_15_30_parallel_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbo_20_10_parallel_dp.txt
+Solved: 70 instances
+totalTime: 3.06 seconds
+minTime: 0.02 seconds
+maxTime: 0.9 seconds
+Average: 0.0437143 seconds
+
+wbo_20_20_parallel_dp.txt
+Solved: 90 instances
+totalTime: 345.24 seconds
+minTime: 3.81 seconds
+maxTime: 4.72 seconds
+Average: 3.836 seconds
+
+wbo_30_10_parallel_dp.txt
+Solved: 100 instances
+totalTime: 4.49 seconds
+minTime: 0.02 seconds
+maxTime: 0.8 seconds
+Average: 0.0449 seconds
+
+wbo_30_15_parallel_dp.txt
+Solved: 120 instances
+totalTime: 95.9801 seconds
+minTime: 0.78 seconds
+maxTime: 1.56 seconds
+Average: 0.799834 seconds
+
+wbo_30_30_parallel_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbop_10_10_parallel_dp.txt
+Solved: 40 instances
+totalTime: 1.87 seconds
+minTime: 0.01 seconds
+maxTime: 0.87 seconds
+Average: 0.04675 seconds
+
+wbop_10_20_parallel_dp.txt
+Solved: 40 instances
+totalTime: 120.68 seconds
+minTime: 2.98 seconds
+maxTime: 3.89 seconds
+Average: 3.017 seconds
+
+wbop_10_30_parallel_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbop_15_15_parallel_dp.txt
+Solved: 60 instances
+totalTime: 37.84 seconds
+minTime: 0.61 seconds
+maxTime: 1.39 seconds
+Average: 0.630667 seconds
+
+wbop_15_30_parallel_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbop_20_10_parallel_dp.txt
+Solved: 40 instances
+totalTime: 2.2 seconds
+minTime: 0.02 seconds
+maxTime: 0.99 seconds
+Average: 0.055 seconds
+
+wbop_20_20_parallel_dp.txt
+Solved: 90 instances
+totalTime: 345.33 seconds
+minTime: 3.81 seconds
+maxTime: 4.71 seconds
+Average: 3.837 seconds
+
+wbop_30_10_parallel_dp.txt
+Solved: 40 instances
+totalTime: 2.4 seconds
+minTime: 0.03 seconds
+maxTime: 0.92 seconds
+Average: 0.06 seconds
+
+wbop_30_15_parallel_dp.txt
+Solved: 60 instances
+totalTime: 48.39 seconds
+minTime: 0.78 seconds
+maxTime: 1.59 seconds
+Average: 0.8065 seconds
+
+wbop_30_30_parallel_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbp_10_10_parallel_dp.txt
+Solved: 40 instances
+totalTime: 1.98 seconds
+minTime: 0.02 seconds
+maxTime: 0.98 seconds
+Average: 0.0495 seconds
+
+wbp_10_20_parallel_dp.txt
+Solved: 70 instances
+totalTime: 210.49 seconds
+minTime: 2.98 seconds
+maxTime: 3.91 seconds
+Average: 3.007 seconds
+
+wbp_10_30_parallel_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbp_15_15_parallel_dp.txt
+Solved: 60 instances
+totalTime: 38.51 seconds
+minTime: 0.61 seconds
+maxTime: 2.06 seconds
+Average: 0.641833 seconds
+
+wbp_15_30_parallel_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbp_20_10_parallel_dp.txt
+Solved: 40 instances
+totalTime: 2.01 seconds
+minTime: 0.02 seconds
+maxTime: 0.8 seconds
+Average: 0.05025 seconds
+
+wbp_20_20_parallel_dp.txt
+Solved: 90 instances
+totalTime: 345.2 seconds
+minTime: 3.81 seconds
+maxTime: 4.54 seconds
+Average: 3.83555 seconds
+
+wbp_30_10_parallel_dp.txt
+Solved: 40 instances
+totalTime: 2.38 seconds
+minTime: 0.03 seconds
+maxTime: 0.93 seconds
+Average: 0.0595 seconds
+
+wbp_30_15_parallel_dp.txt
+Solved: 60 instances
+totalTime: 49.24 seconds
+minTime: 0.8 seconds
+maxTime: 1.64 seconds
+Average: 0.820667 seconds
+
+wbp_30_30_parallel_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+

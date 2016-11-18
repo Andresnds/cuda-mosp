@@ -1,0 +1,35 @@
+gp100by100_parallel_dp.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+gp50by50_parallel_dp.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+nrwsLarger4_parallel_dp.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+nwrsSmaller4_parallel_dp.txt
+Solved: 19 instances
+totalTime: 0.88 seconds
+minTime: 0 seconds
+maxTime: 0.87 seconds
+Average: 0.0463158 seconds
+
+sp4_parallel_dp.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+

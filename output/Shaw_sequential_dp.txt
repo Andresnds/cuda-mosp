@@ -1,0 +1,7 @@
+ShawInstances_sequential_dp.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+

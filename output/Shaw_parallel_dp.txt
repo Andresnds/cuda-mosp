@@ -1,0 +1,7 @@
+ShawInstances_parallel_dp.txt
+Solved: 149 instances
+totalTime: 12.4 seconds
+minTime: 0 seconds
+maxTime: 3.84 seconds
+Average: 0.0832215 seconds
+

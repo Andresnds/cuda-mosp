@@ -1,0 +1,210 @@
+wbo_10_10_sequential_dp.txt
+Solved: 40 instances
+totalTime: 3.43 seconds
+minTime: 0.08 seconds
+maxTime: 0.1 seconds
+Average: 0.08575 seconds
+
+wbo_10_20_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbo_10_30_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbo_15_15_sequential_dp.txt
+Solved: 60 instances
+totalTime: 432.85 seconds
+minTime: 6.85 seconds
+maxTime: 7.54 seconds
+Average: 7.21417 seconds
+
+wbo_15_30_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbo_20_10_sequential_dp.txt
+Solved: 70 instances
+totalTime: 9.73 seconds
+minTime: 0.13 seconds
+maxTime: 0.15 seconds
+Average: 0.139 seconds
+
+wbo_20_20_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbo_30_10_sequential_dp.txt
+Solved: 100 instances
+totalTime: 19.24 seconds
+minTime: 0.18 seconds
+maxTime: 0.2 seconds
+Average: 0.1924 seconds
+
+wbo_30_15_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbo_30_30_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbop_10_10_sequential_dp.txt
+Solved: 40 instances
+totalTime: 3.4 seconds
+minTime: 0.08 seconds
+maxTime: 0.09 seconds
+Average: 0.085 seconds
+
+wbop_10_20_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbop_10_30_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbop_15_15_sequential_dp.txt
+Solved: 60 instances
+totalTime: 433.63 seconds
+minTime: 6.87 seconds
+maxTime: 7.53 seconds
+Average: 7.22717 seconds
+
+wbop_15_30_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbop_20_10_sequential_dp.txt
+Solved: 40 instances
+totalTime: 5.54 seconds
+minTime: 0.13 seconds
+maxTime: 0.15 seconds
+Average: 0.1385 seconds
+
+wbop_20_20_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbop_30_10_sequential_dp.txt
+Solved: 40 instances
+totalTime: 7.7 seconds
+minTime: 0.18 seconds
+maxTime: 0.2 seconds
+Average: 0.1925 seconds
+
+wbop_30_15_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbop_30_30_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbp_10_10_sequential_dp.txt
+Solved: 40 instances
+totalTime: 3.4 seconds
+minTime: 0.08 seconds
+maxTime: 0.09 seconds
+Average: 0.085 seconds
+
+wbp_10_20_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbp_10_30_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbp_15_15_sequential_dp.txt
+Solved: 60 instances
+totalTime: 431.99 seconds
+minTime: 6.87 seconds
+maxTime: 7.5 seconds
+Average: 7.19983 seconds
+
+wbp_15_30_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbp_20_10_sequential_dp.txt
+Solved: 40 instances
+totalTime: 5.53 seconds
+minTime: 0.13 seconds
+maxTime: 0.15 seconds
+Average: 0.13825 seconds
+
+wbp_20_20_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbp_30_10_sequential_dp.txt
+Solved: 40 instances
+totalTime: 7.68 seconds
+minTime: 0.18 seconds
+maxTime: 0.2 seconds
+Average: 0.192 seconds
+
+wbp_30_15_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+
+wbp_30_30_sequential_dp.txt
+Solved: - instances
+totalTime: - seconds
+minTime: - seconds
+maxTime: - seconds
+Average: - seconds
+

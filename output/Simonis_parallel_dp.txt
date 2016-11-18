@@ -1,0 +1,70 @@
+problem_10_10_parallel_dp.dat
+Solved: 550 instances
+totalTime: 14.66 seconds
+minTime: 0.01 seconds
+maxTime: 0.76 seconds
+Average: 0.0266546 seconds
+
+problem_10_20_parallel_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+problem_15_15_parallel_dp.dat
+Solved: 550 instances
+totalTime: 340.649 seconds
+minTime: 0.6 seconds
+maxTime: 1.45 seconds
+Average: 0.619361 seconds
+
+problem_15_30_parallel_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+problem_20_10_parallel_dp.dat
+Solved: 550 instances
+totalTime: 17.95 seconds
+minTime: 0.02 seconds
+maxTime: 0.9 seconds
+Average: 0.0326364 seconds
+
+problem_20_20_parallel_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+problem_30_10_parallel_dp.dat
+Solved: 550 instances
+totalTime: 21.3901 seconds
+minTime: 0.02 seconds
+maxTime: 0.92 seconds
+Average: 0.0388911 seconds
+
+problem_30_15_parallel_dp.dat
+Solved: 220 instances
+totalTime: 175.56 seconds
+minTime: 0.78 seconds
+maxTime: 1.69 seconds
+Average: 0.798 seconds
+
+problem_30_30_parallel_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+problem_40_20_parallel_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+

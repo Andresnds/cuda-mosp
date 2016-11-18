@@ -1,0 +1,210 @@
+wbo_10_10_parallel_bf.txt
+Solved: 40 instances
+totalTime: 314.12 seconds
+minTime: 7.81 seconds
+maxTime: 8.63 seconds
+Average: 7.853 seconds
+
+wbo_10_20_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_10_30_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_15_15_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_15_30_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_20_10_parallel_bf.txt
+Solved: 70 instances
+totalTime: 583 seconds
+minTime: 8.23 seconds
+maxTime: 9.15 seconds
+Average: 8.32857 seconds
+
+wbo_20_20_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_30_10_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_30_15_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbo_30_30_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_10_10_parallel_bf.txt
+Solved: 40 instances
+totalTime: 313.98 seconds
+minTime: 7.79 seconds
+maxTime: 8.73 seconds
+Average: 7.8495 seconds
+
+wbop_10_20_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_10_30_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_15_15_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_15_30_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_20_10_parallel_bf.txt
+Solved: 40 instances
+totalTime: 332.79 seconds
+minTime: 8.21 seconds
+maxTime: 9.08 seconds
+Average: 8.31975 seconds
+
+wbop_20_20_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_30_10_parallel_bf.txt
+Solved: 40 instances
+totalTime: 428.29 seconds
+minTime: 10.53 seconds
+maxTime: 11.41 seconds
+Average: 10.7073 seconds
+
+wbop_30_15_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbop_30_30_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_10_10_parallel_bf.txt
+Solved: 40 instances
+totalTime: 313.96 seconds
+minTime: 7.8 seconds
+maxTime: 8.68 seconds
+Average: 7.849 seconds
+
+wbp_10_20_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_10_30_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_15_15_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_15_30_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_20_10_parallel_bf.txt
+Solved: 40 instances
+totalTime: 332.81 seconds
+minTime: 8.21 seconds
+maxTime: 9.08 seconds
+Average: 8.32025 seconds
+
+wbp_20_20_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_30_10_parallel_bf.txt
+Solved: 40 instances
+totalTime: 434.24 seconds
+minTime: 10.67 seconds
+maxTime: 11.65 seconds
+Average: 10.856 seconds
+
+wbp_30_15_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+wbp_30_30_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+

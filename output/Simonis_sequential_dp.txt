@@ -1,0 +1,70 @@
+problem_10_10_sequential_dp.dat
+Solved: 550 instances
+totalTime: 47.1301 seconds
+minTime: 0.08 seconds
+maxTime: 0.1 seconds
+Average: 0.0856912 seconds
+
+problem_10_20_sequential_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+problem_15_15_sequential_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+problem_15_30_sequential_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+problem_20_10_sequential_dp.dat
+Solved: 550 instances
+totalTime: 77.2899 seconds
+minTime: 0.13 seconds
+maxTime: 0.15 seconds
+Average: 0.140527 seconds
+
+problem_20_20_sequential_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+problem_30_10_sequential_dp.dat
+Solved: 550 instances
+totalTime: 107.2 seconds
+minTime: 0.18 seconds
+maxTime: 0.21 seconds
+Average: 0.194908 seconds
+
+problem_30_15_sequential_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+problem_30_30_sequential_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+problem_40_20_sequential_dp.dat
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
