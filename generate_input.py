@@ -15,7 +15,7 @@ def generate_orders(x, y):
             f.write("%d %d \n" % (x, y))
             for p in xrange(x):
                 for q in xrange(y):
-                    if random.random() > 0.25:
+                    if random.random() < 0.25:
                         ordered = 1
                     else:
                         ordered = 0
@@ -24,6 +24,6 @@ def generate_orders(x, y):
             f.write("\n")
 
 
-for x in [10]:
-    for y in xrange(2, 19):
+for x in xrange(9, 20, 2):
+    for y in [8, 9, 10]:
         generate_orders(x, y)

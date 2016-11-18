@@ -189,10 +189,10 @@ void bruteForceSolve(int* orders,
         }
     }
 
-    checkOk(cudaFree(orders_d));
-    checkOk(cudaFree(stackSizes_d));
-
     free(stackSizes);
+
+    checkOk(cudaFree(stackSizes_d));
+    checkOk(cudaFree(orders_d));
 
     // Debugging output
 
