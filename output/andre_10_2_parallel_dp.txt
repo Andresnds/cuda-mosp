@@ -25,7 +25,7 @@ Best sequence:
 1 1 
 0 1 
 OpenStacks: 8
-Took 0.86 seconds
+Took 0.96 seconds
 
 buffer: Instance 11
 numCustomers: 10
@@ -280,7 +280,7 @@ OpenStacks: 7
 Took 0 seconds
 
 Solved: 10 instances
-totalTime: 0.86 seconds
+totalTime: 0.96 seconds
 minTime: 0 seconds
-maxTime: 0.86 seconds
-Average: 0.086 seconds
+maxTime: 0.96 seconds
+Average: 0.096 seconds

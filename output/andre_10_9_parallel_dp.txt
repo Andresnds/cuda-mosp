@@ -25,7 +25,7 @@ Best sequence:
 0 1 1 0 1 0 1 1 1 
 1 1 0 1 1 1 1 1 0 
 OpenStacks: 10
-Took 0.8 seconds
+Took 0.88 seconds
 
 buffer: Instance 81
 numCustomers: 10
@@ -53,7 +53,7 @@ Best sequence:
 0 1 1 1 1 0 1 0 0 
 1 1 1 1 1 0 0 0 1 
 OpenStacks: 10
-Took 0.02 seconds
+Took 0.03 seconds
 
 buffer: Instance 82
 numCustomers: 10
@@ -81,7 +81,7 @@ Best sequence:
 0 1 1 1 1 1 0 0 1 
 1 1 0 0 1 1 1 1 1 
 OpenStacks: 10
-Took 0.02 seconds
+Took 0.01 seconds
 
 buffer: Instance 83
 numCustomers: 10
@@ -137,7 +137,7 @@ Best sequence:
 1 1 1 1 1 0 1 1 1 
 1 1 1 1 1 1 0 1 1 
 OpenStacks: 10
-Took 0.02 seconds
+Took 0.03 seconds
 
 buffer: Instance 85
 numCustomers: 10
@@ -193,7 +193,7 @@ Best sequence:
 1 1 1 1 0 1 1 1 1 
 0 1 1 1 0 0 0 1 1 
 OpenStacks: 10
-Took 0.02 seconds
+Took 0.01 seconds
 
 buffer: Instance 87
 numCustomers: 10
@@ -221,7 +221,7 @@ Best sequence:
 1 0 0 1 1 1 0 1 1 
 1 0 1 0 0 1 0 1 1 
 OpenStacks: 10
-Took 0.01 seconds
+Took 0.02 seconds
 
 buffer: Instance 88
 numCustomers: 10
@@ -249,7 +249,7 @@ Best sequence:
 0 0 1 1 1 1 1 1 1 
 1 1 1 0 1 1 1 0 0 
 OpenStacks: 10
-Took 0.02 seconds
+Took 0.01 seconds
 
 buffer: Instance 89
 numCustomers: 10
@@ -277,10 +277,10 @@ Best sequence:
 0 1 1 1 1 0 1 1 0 
 1 0 1 1 0 1 1 1 1 
 OpenStacks: 10
-Took 0.02 seconds
+Took 0.03 seconds
 
 Solved: 10 instances
-totalTime: 0.95 seconds
+totalTime: 1.04 seconds
 minTime: 0.01 seconds
-maxTime: 0.8 seconds
-Average: 0.095 seconds
+maxTime: 0.88 seconds
+Average: 0.104 seconds

@@ -25,7 +25,7 @@ Best sequence:
 1 1 0 1 1 
 1 1 1 1 1 
 OpenStacks: 10
-Took 0.78 seconds
+Took 0.82 seconds
 
 buffer: Instance 41
 numCustomers: 10
@@ -53,7 +53,7 @@ Best sequence:
 1 1 1 1 1 
 1 1 1 1 0 
 OpenStacks: 10
-Took 0 seconds
+Took 0.01 seconds
 
 buffer: Instance 42
 numCustomers: 10
@@ -137,7 +137,7 @@ Best sequence:
 0 0 1 1 1 
 1 1 1 0 0 
 OpenStacks: 8
-Took 0.01 seconds
+Took 0 seconds
 
 buffer: Instance 45
 numCustomers: 10
@@ -193,7 +193,7 @@ Best sequence:
 1 1 1 1 0 
 1 1 1 1 0 
 OpenStacks: 10
-Took 0.01 seconds
+Took 0 seconds
 
 buffer: Instance 47
 numCustomers: 10
@@ -280,7 +280,7 @@ OpenStacks: 10
 Took 0 seconds
 
 Solved: 10 instances
-totalTime: 0.8 seconds
+totalTime: 0.83 seconds
 minTime: 0 seconds
-maxTime: 0.78 seconds
-Average: 0.08 seconds
+maxTime: 0.82 seconds
+Average: 0.083 seconds

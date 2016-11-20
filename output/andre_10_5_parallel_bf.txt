@@ -13,17 +13,294 @@ numProducts: 5
 1 1 0 1 1 
 1 1 1 1 1 
 numSequences: 120
-minStacks: 11
+minStacks: 10
 Best sequence:
-4 0 0 2 3 
+4 0 1 2 3 
 1 1 1 1 1 
 1 1 1 1 0 
-1 0 0 1 0 
+1 0 1 1 0 
 0 1 1 1 1 
 0 1 1 1 1 
 1 1 1 1 0 
 0 1 1 0 1 
-1 1 1 1 1 
+1 1 0 1 1 
 1 1 1 0 1 
 1 1 1 1 1 
 Open stacks: 10
+Took 0.8 seconds
+
+buffer: Instance 41
+numCustomers: 10
+numProducts: 5
+1 1 1 1 1 
+1 1 1 0 1 
+0 1 0 0 1 
+1 1 1 1 0 
+1 1 1 1 1 
+1 1 1 1 1 
+0 1 1 1 1 
+0 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 0 
+numSequences: 120
+minStacks: 10
+Best sequence:
+4 0 1 2 3 
+1 1 1 1 1 
+1 1 1 1 0 
+1 0 1 0 0 
+0 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 0 1 1 1 
+1 0 1 1 1 
+1 1 1 1 1 
+0 1 1 1 1 
+Open stacks: 10
+Took 0 seconds
+
+buffer: Instance 42
+numCustomers: 10
+numProducts: 5
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 0 1 1 
+1 1 0 1 1 
+0 0 1 0 0 
+1 0 1 1 1 
+1 1 0 1 1 
+1 1 1 1 0 
+0 1 1 1 1 
+numSequences: 120
+minStacks: 9
+Best sequence:
+4 3 1 0 2 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 0 
+1 1 1 1 0 
+0 0 0 0 1 
+1 1 0 1 1 
+1 1 1 1 0 
+0 1 1 1 1 
+1 1 1 0 1 
+Open stacks: 9
+Took 0 seconds
+
+buffer: Instance 43
+numCustomers: 10
+numProducts: 5
+1 0 1 1 1 
+1 1 0 1 1 
+1 1 1 1 1 
+1 1 1 0 1 
+1 1 1 1 1 
+1 1 1 0 0 
+0 1 0 1 1 
+1 1 0 0 1 
+1 0 1 1 1 
+1 1 1 1 0 
+numSequences: 120
+minStacks: 10
+Best sequence:
+4 0 1 2 3 
+1 1 0 1 1 
+1 1 1 0 1 
+1 1 1 1 1 
+1 1 1 1 0 
+1 1 1 1 1 
+0 1 1 1 0 
+1 0 1 0 1 
+1 1 1 0 0 
+1 1 0 1 1 
+0 1 1 1 1 
+Open stacks: 10
+Took 0 seconds
+
+buffer: Instance 44
+numCustomers: 10
+numProducts: 5
+0 1 1 0 1 
+1 1 1 0 0 
+1 1 1 0 1 
+0 0 0 1 0 
+1 0 1 0 0 
+1 1 0 1 1 
+1 1 1 0 0 
+1 1 0 0 1 
+0 1 0 1 1 
+1 1 1 0 0 
+numSequences: 120
+minStacks: 8
+Best sequence:
+4 3 1 0 2 
+1 0 1 0 1 
+0 0 1 1 1 
+1 0 1 1 1 
+0 1 0 0 0 
+0 0 0 1 1 
+1 1 1 1 0 
+0 0 1 1 1 
+1 0 1 1 0 
+1 1 1 0 0 
+0 0 1 1 1 
+Open stacks: 8
+Took 0 seconds
+
+buffer: Instance 45
+numCustomers: 10
+numProducts: 5
+1 1 1 1 1 
+1 0 0 1 1 
+1 1 1 0 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 0 1 1 
+1 1 1 1 1 
+0 1 0 0 1 
+1 1 1 1 1 
+1 0 1 1 1 
+numSequences: 120
+minStacks: 10
+Best sequence:
+4 0 1 2 3 
+1 1 1 1 1 
+1 1 0 0 1 
+1 1 1 1 0 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 0 1 
+1 1 1 1 1 
+1 0 1 0 0 
+1 1 1 1 1 
+1 1 0 1 1 
+Open stacks: 10
+Took 0 seconds
+
+buffer: Instance 46
+numCustomers: 10
+numProducts: 5
+0 1 1 1 0 
+0 1 1 1 0 
+1 0 1 1 1 
+0 1 0 1 1 
+0 1 1 1 0 
+0 1 1 1 1 
+1 1 1 0 0 
+0 0 1 1 1 
+1 1 1 1 0 
+1 1 1 1 0 
+numSequences: 120
+minStacks: 10
+Best sequence:
+4 0 1 2 3 
+0 0 1 1 1 
+0 0 1 1 1 
+1 1 0 1 1 
+1 0 1 0 1 
+0 0 1 1 1 
+1 0 1 1 1 
+0 1 1 1 0 
+1 0 0 1 1 
+0 1 1 1 1 
+0 1 1 1 1 
+Open stacks: 10
+Took 0 seconds
+
+buffer: Instance 47
+numCustomers: 10
+numProducts: 5
+0 1 1 1 1 
+1 0 0 1 1 
+1 1 1 1 1 
+1 0 1 1 1 
+1 0 1 1 1 
+1 1 1 0 1 
+0 1 1 0 0 
+0 1 1 1 1 
+1 1 1 0 1 
+0 1 0 1 1 
+numSequences: 120
+minStacks: 9
+Best sequence:
+4 3 0 1 2 
+1 1 0 1 1 
+1 1 1 0 0 
+1 1 1 1 1 
+1 1 1 0 1 
+1 1 1 0 1 
+1 0 1 1 1 
+0 0 0 1 1 
+1 1 0 1 1 
+1 0 1 1 1 
+1 1 0 1 0 
+Open stacks: 9
+Took 0.01 seconds
+
+buffer: Instance 48
+numCustomers: 10
+numProducts: 5
+0 1 1 1 0 
+1 1 1 1 1 
+1 1 0 1 0 
+0 0 1 1 0 
+1 1 1 1 0 
+0 0 1 1 1 
+1 1 1 1 1 
+1 1 1 0 1 
+1 1 1 1 1 
+1 0 1 1 0 
+numSequences: 120
+minStacks: 10
+Best sequence:
+4 0 1 2 3 
+0 0 1 1 1 
+1 1 1 1 1 
+0 1 1 0 1 
+0 0 0 1 1 
+0 1 1 1 1 
+1 0 0 1 1 
+1 1 1 1 1 
+1 1 1 1 0 
+1 1 1 1 1 
+0 1 0 1 1 
+Open stacks: 10
+Took 0.01 seconds
+
+buffer: Instance 49
+numCustomers: 10
+numProducts: 5
+1 0 1 1 1 
+1 1 1 1 1 
+1 1 1 1 0 
+1 1 0 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 0 1 0 
+1 1 0 1 0 
+0 1 1 1 0 
+numSequences: 120
+minStacks: 10
+Best sequence:
+4 0 1 2 3 
+1 1 0 1 1 
+1 1 1 1 1 
+0 1 1 1 1 
+1 1 1 0 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+0 1 1 0 1 
+0 1 1 0 1 
+0 0 1 1 1 
+Open stacks: 10
+Took 0 seconds
+
+Solved: 10 instances
+totalTime: 0.82 seconds
+minTime: 0 seconds
+maxTime: 0.8 seconds
+Average: 0.082 seconds

@@ -27,7 +27,7 @@ Best sequence:
 1 0 1 1 0 1 0 1 1 
 0 1 1 0 1 1 1 1 1 
 Open stacks: 10
-Took 1.55 seconds
+Took 1.59 seconds
 
 buffer: Instance 81
 numCustomers: 10
@@ -57,7 +57,7 @@ Best sequence:
 0 0 1 1 1 1 0 1 0 
 1 1 1 1 1 1 0 0 0 
 Open stacks: 10
-Took 0.71 seconds
+Took 0.79 seconds
 
 buffer: Instance 82
 numCustomers: 10
@@ -87,7 +87,7 @@ Best sequence:
 1 0 1 1 1 1 1 0 0 
 1 1 1 0 0 1 1 1 1 
 Open stacks: 10
-Took 0.71 seconds
+Took 0.78 seconds
 
 buffer: Instance 83
 numCustomers: 10
@@ -117,7 +117,7 @@ Best sequence:
 1 1 0 0 1 0 1 1 1 
 0 1 1 0 1 1 1 1 1 
 Open stacks: 10
-Took 0.7 seconds
+Took 0.78 seconds
 
 buffer: Instance 84
 numCustomers: 10
@@ -147,7 +147,7 @@ Best sequence:
 1 1 1 1 1 1 0 1 1 
 1 1 1 1 1 1 1 0 1 
 Open stacks: 10
-Took 0.71 seconds
+Took 0.79 seconds
 
 buffer: Instance 85
 numCustomers: 10
@@ -177,7 +177,7 @@ Best sequence:
 0 1 1 0 1 1 1 0 1 
 1 1 1 1 0 1 1 1 0 
 Open stacks: 10
-Took 0.71 seconds
+Took 0.78 seconds
 
 buffer: Instance 86
 numCustomers: 10
@@ -207,7 +207,7 @@ Best sequence:
 1 1 1 1 1 0 1 1 1 
 1 0 1 1 1 0 0 0 1 
 Open stacks: 10
-Took 0.71 seconds
+Took 0.79 seconds
 
 buffer: Instance 87
 numCustomers: 10
@@ -237,7 +237,7 @@ Best sequence:
 1 1 0 0 1 1 1 0 1 
 1 1 0 1 0 0 1 0 1 
 Open stacks: 10
-Took 0.71 seconds
+Took 0.77 seconds
 
 buffer: Instance 88
 numCustomers: 10
@@ -267,7 +267,7 @@ Best sequence:
 1 0 0 1 1 1 1 1 1 
 0 1 1 1 0 1 1 1 0 
 Open stacks: 10
-Took 0.71 seconds
+Took 0.79 seconds
 
 buffer: Instance 89
 numCustomers: 10
@@ -297,10 +297,10 @@ Best sequence:
 0 0 1 1 1 1 0 1 1 
 1 1 0 1 1 0 1 1 1 
 Open stacks: 10
-Took 0.71 seconds
+Took 0.78 seconds
 
 Solved: 10 instances
-totalTime: 7.93 seconds
-minTime: 0.7 seconds
-maxTime: 1.55 seconds
-Average: 0.793 seconds
+totalTime: 8.64 seconds
+minTime: 0.77 seconds
+maxTime: 1.59 seconds
+Average: 0.864 seconds
