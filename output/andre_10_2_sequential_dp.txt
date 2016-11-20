@@ -1,0 +1,286 @@
+Solving by Dynamic Programming...
+buffer: Instance 10
+numCustomers: 10
+numProducts: 2
+0 1 
+0 1 
+1 1 
+1 1 
+0 1 
+0 0 
+0 1 
+1 0 
+1 1 
+0 1 
+Best Sequence: 
+1 0 
+1 0 
+1 0 
+1 1 
+1 1 
+1 0 
+0 0 
+1 0 
+0 1 
+1 1 
+1 0 
+OpenStacks: 8
+Took 0 seconds
+
+buffer: Instance 11
+numCustomers: 10
+numProducts: 2
+0 1 
+1 0 
+1 1 
+1 1 
+1 1 
+0 1 
+1 1 
+1 0 
+1 1 
+1 0 
+Best Sequence: 
+1 0 
+1 0 
+0 1 
+1 1 
+1 1 
+1 1 
+1 0 
+1 1 
+0 1 
+1 1 
+0 1 
+OpenStacks: 8
+Took 0 seconds
+
+buffer: Instance 12
+numCustomers: 10
+numProducts: 2
+1 1 
+1 1 
+0 1 
+0 1 
+0 1 
+1 1 
+1 1 
+0 1 
+1 1 
+1 1 
+Best Sequence: 
+1 0 
+1 1 
+1 1 
+1 0 
+1 0 
+1 0 
+1 1 
+1 1 
+1 0 
+1 1 
+1 1 
+OpenStacks: 10
+Took 0 seconds
+
+buffer: Instance 13
+numCustomers: 10
+numProducts: 2
+0 0 
+1 1 
+1 1 
+1 1 
+0 0 
+1 0 
+1 0 
+1 1 
+1 0 
+1 1 
+Best Sequence: 
+1 0 
+0 0 
+1 1 
+1 1 
+1 1 
+0 0 
+0 1 
+0 1 
+1 1 
+0 1 
+1 1 
+OpenStacks: 8
+Took 0 seconds
+
+buffer: Instance 14
+numCustomers: 10
+numProducts: 2
+0 1 
+1 0 
+1 1 
+1 0 
+1 0 
+1 1 
+1 1 
+1 0 
+1 1 
+1 1 
+Best Sequence: 
+1 0 
+1 0 
+0 1 
+1 1 
+0 1 
+0 1 
+1 1 
+1 1 
+0 1 
+1 1 
+1 1 
+OpenStacks: 9
+Took 0 seconds
+
+buffer: Instance 15
+numCustomers: 10
+numProducts: 2
+1 1 
+0 1 
+1 1 
+0 1 
+0 0 
+1 1 
+1 1 
+0 1 
+0 1 
+0 1 
+Best Sequence: 
+1 0 
+1 1 
+1 0 
+1 1 
+1 0 
+0 0 
+1 1 
+1 1 
+1 0 
+1 0 
+1 0 
+OpenStacks: 9
+Took 0 seconds
+
+buffer: Instance 16
+numCustomers: 10
+numProducts: 2
+1 1 
+0 1 
+0 1 
+1 1 
+1 1 
+0 0 
+0 1 
+1 1 
+0 0 
+1 1 
+Best Sequence: 
+1 0 
+1 1 
+1 0 
+1 0 
+1 1 
+1 1 
+0 0 
+1 0 
+1 1 
+0 0 
+1 1 
+OpenStacks: 8
+Took 0 seconds
+
+buffer: Instance 17
+numCustomers: 10
+numProducts: 2
+1 1 
+1 1 
+1 1 
+1 0 
+1 1 
+1 1 
+1 0 
+1 1 
+1 1 
+1 1 
+Best Sequence: 
+1 0 
+1 1 
+1 1 
+1 1 
+0 1 
+1 1 
+1 1 
+0 1 
+1 1 
+1 1 
+1 1 
+OpenStacks: 10
+Took 0 seconds
+
+buffer: Instance 18
+numCustomers: 10
+numProducts: 2
+1 1 
+0 1 
+0 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 0 
+1 1 
+1 1 
+Best Sequence: 
+1 0 
+1 1 
+1 0 
+1 0 
+1 1 
+1 1 
+1 1 
+1 1 
+0 1 
+1 1 
+1 1 
+OpenStacks: 9
+Took 0 seconds
+
+buffer: Instance 19
+numCustomers: 10
+numProducts: 2
+0 1 
+1 1 
+0 1 
+1 0 
+1 1 
+0 1 
+1 0 
+0 0 
+1 1 
+1 1 
+Best Sequence: 
+1 0 
+1 0 
+1 1 
+1 0 
+0 1 
+1 1 
+1 0 
+0 1 
+0 0 
+1 1 
+1 1 
+OpenStacks: 7
+Took 0 seconds
+
+Solved: 10 instances
+totalTime: 0 seconds
+minTime: 0 seconds
+maxTime: 0 seconds
+Average: 0 seconds

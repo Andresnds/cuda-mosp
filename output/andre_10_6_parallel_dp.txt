@@ -1,0 +1,286 @@
+Solving by Dynamic Programming...
+buffer: Instance 50
+numCustomers: 10
+numProducts: 6
+0 1 0 0 1 0 
+1 1 1 1 1 0 
+1 1 1 1 0 0 
+0 1 0 1 1 1 
+1 1 1 0 1 0 
+1 0 0 1 0 1 
+1 1 1 1 1 1 
+0 1 0 1 1 1 
+1 1 1 1 1 1 
+1 1 1 1 1 1 
+Best sequence:
+0 2 3 5 1 4 
+0 0 0 0 1 1 
+1 1 1 0 1 1 
+1 1 1 0 1 0 
+0 0 1 1 1 1 
+1 1 0 0 1 1 
+1 0 1 1 0 0 
+1 1 1 1 1 1 
+0 0 1 1 1 1 
+1 1 1 1 1 1 
+1 1 1 1 1 1 
+OpenStacks: 9
+Took 0.92 seconds
+
+buffer: Instance 51
+numCustomers: 10
+numProducts: 6
+1 0 0 0 1 1 
+1 1 1 1 1 0 
+1 1 0 1 0 0 
+0 1 1 0 1 1 
+1 1 1 1 1 1 
+1 0 1 1 1 1 
+1 1 1 1 1 1 
+1 0 1 1 1 1 
+1 1 1 1 0 1 
+1 1 0 1 1 0 
+Best sequence:
+0 1 2 3 4 5 
+1 0 0 0 1 1 
+1 1 1 1 1 0 
+1 1 0 1 0 0 
+0 1 1 0 1 1 
+1 1 1 1 1 1 
+1 0 1 1 1 1 
+1 1 1 1 1 1 
+1 0 1 1 1 1 
+1 1 1 1 0 1 
+1 1 0 1 1 0 
+OpenStacks: 10
+Took 0.01 seconds
+
+buffer: Instance 52
+numCustomers: 10
+numProducts: 6
+1 1 1 1 1 1 
+0 0 1 1 1 0 
+1 1 1 1 1 1 
+1 0 1 1 1 0 
+1 1 1 1 1 1 
+1 1 1 1 0 1 
+1 1 1 1 1 0 
+1 0 1 1 1 0 
+1 0 0 1 0 0 
+1 1 1 0 1 0 
+Best sequence:
+0 1 2 3 4 5 
+1 1 1 1 1 1 
+0 0 1 1 1 0 
+1 1 1 1 1 1 
+1 0 1 1 1 0 
+1 1 1 1 1 1 
+1 1 1 1 0 1 
+1 1 1 1 1 0 
+1 0 1 1 1 0 
+1 0 0 1 0 0 
+1 1 1 0 1 0 
+OpenStacks: 10
+Took 0 seconds
+
+buffer: Instance 53
+numCustomers: 10
+numProducts: 6
+1 0 1 1 0 1 
+1 0 0 1 1 1 
+0 1 1 1 1 1 
+1 1 1 0 0 1 
+1 1 1 0 0 0 
+0 1 1 0 0 1 
+0 1 1 1 1 1 
+1 1 0 1 1 1 
+1 0 1 1 1 1 
+0 1 1 1 1 0 
+Best sequence:
+0 1 2 3 4 5 
+1 0 1 1 0 1 
+1 0 0 1 1 1 
+0 1 1 1 1 1 
+1 1 1 0 0 1 
+1 1 1 0 0 0 
+0 1 1 0 0 1 
+0 1 1 1 1 1 
+1 1 0 1 1 1 
+1 0 1 1 1 1 
+0 1 1 1 1 0 
+OpenStacks: 10
+Took 0 seconds
+
+buffer: Instance 54
+numCustomers: 10
+numProducts: 6
+0 1 1 1 1 1 
+0 0 1 1 0 1 
+1 1 1 1 0 0 
+0 1 1 0 1 0 
+0 1 0 1 1 1 
+0 1 0 1 1 0 
+1 1 1 0 1 1 
+0 1 1 1 1 1 
+1 1 1 0 1 1 
+1 0 0 1 1 1 
+Best sequence:
+0 1 2 3 4 5 
+0 1 1 1 1 1 
+0 0 1 1 0 1 
+1 1 1 1 0 0 
+0 1 1 0 1 0 
+0 1 0 1 1 1 
+0 1 0 1 1 0 
+1 1 1 0 1 1 
+0 1 1 1 1 1 
+1 1 1 0 1 1 
+1 0 0 1 1 1 
+OpenStacks: 10
+Took 0 seconds
+
+buffer: Instance 55
+numCustomers: 10
+numProducts: 6
+1 1 1 1 1 0 
+1 0 1 1 0 1 
+1 0 1 1 0 1 
+0 1 1 1 1 0 
+0 1 1 1 1 1 
+1 0 1 1 0 1 
+1 0 1 1 0 0 
+1 1 1 1 1 1 
+1 1 1 0 0 1 
+1 1 1 0 0 1 
+Best sequence:
+0 1 2 3 4 5 
+1 1 1 1 1 0 
+1 0 1 1 0 1 
+1 0 1 1 0 1 
+0 1 1 1 1 0 
+0 1 1 1 1 1 
+1 0 1 1 0 1 
+1 0 1 1 0 0 
+1 1 1 1 1 1 
+1 1 1 0 0 1 
+1 1 1 0 0 1 
+OpenStacks: 10
+Took 0.01 seconds
+
+buffer: Instance 56
+numCustomers: 10
+numProducts: 6
+0 1 1 1 1 1 
+1 1 1 1 1 0 
+1 0 1 1 1 1 
+0 0 1 0 0 0 
+0 1 1 1 1 1 
+0 1 0 1 0 1 
+1 0 1 1 0 1 
+1 0 0 1 1 1 
+1 0 1 0 1 1 
+1 1 1 1 1 1 
+Best sequence:
+0 1 3 4 5 2 
+0 1 1 1 1 1 
+1 1 1 1 0 1 
+1 0 1 1 1 1 
+0 0 0 0 0 1 
+0 1 1 1 1 1 
+0 1 1 0 1 0 
+1 0 1 0 1 1 
+1 0 1 1 1 0 
+1 0 0 1 1 1 
+1 1 1 1 1 1 
+OpenStacks: 9
+Took 0 seconds
+
+buffer: Instance 57
+numCustomers: 10
+numProducts: 6
+0 1 1 0 1 1 
+1 1 1 0 1 0 
+1 0 1 0 1 1 
+0 0 1 0 1 0 
+1 0 0 1 0 1 
+1 0 1 1 1 1 
+1 0 1 1 1 1 
+0 1 1 1 1 1 
+0 1 0 1 0 1 
+0 1 0 1 1 1 
+Best sequence:
+0 1 3 5 2 4 
+0 1 0 1 1 1 
+1 1 0 0 1 1 
+1 0 0 1 1 1 
+0 0 0 0 1 1 
+1 0 1 1 0 0 
+1 0 1 1 1 1 
+1 0 1 1 1 1 
+0 1 1 1 1 1 
+0 1 1 1 0 0 
+0 1 1 1 0 1 
+OpenStacks: 9
+Took 0 seconds
+
+buffer: Instance 58
+numCustomers: 10
+numProducts: 6
+0 1 1 1 1 1 
+1 0 1 1 1 1 
+1 1 0 1 1 1 
+0 1 1 1 1 1 
+0 1 1 1 1 1 
+1 1 0 0 1 1 
+0 0 0 1 1 0 
+1 0 1 1 0 1 
+1 1 1 1 1 1 
+1 0 1 1 1 1 
+Best sequence:
+0 1 2 3 4 5 
+0 1 1 1 1 1 
+1 0 1 1 1 1 
+1 1 0 1 1 1 
+0 1 1 1 1 1 
+0 1 1 1 1 1 
+1 1 0 0 1 1 
+0 0 0 1 1 0 
+1 0 1 1 0 1 
+1 1 1 1 1 1 
+1 0 1 1 1 1 
+OpenStacks: 10
+Took 0.01 seconds
+
+buffer: Instance 59
+numCustomers: 10
+numProducts: 6
+1 1 1 1 1 1 
+1 1 1 1 0 1 
+1 0 0 1 1 1 
+1 1 1 1 1 1 
+0 0 1 1 1 1 
+0 1 1 0 0 0 
+1 0 1 1 1 0 
+1 1 1 1 1 1 
+0 0 1 1 0 1 
+0 1 1 1 1 1 
+Best sequence:
+0 3 4 5 1 2 
+1 1 1 1 1 1 
+1 1 0 1 1 1 
+1 1 1 1 0 0 
+1 1 1 1 1 1 
+0 1 1 1 0 1 
+0 0 0 0 1 1 
+1 1 1 0 0 1 
+1 1 1 1 1 1 
+0 1 0 1 0 1 
+0 1 1 1 1 1 
+OpenStacks: 9
+Took 0 seconds
+
+Solved: 10 instances
+totalTime: 0.95 seconds
+minTime: 0 seconds
+maxTime: 0.92 seconds
+Average: 0.095 seconds
