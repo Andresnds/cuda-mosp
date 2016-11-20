@@ -1,0 +1,29 @@
+Solving by Brute Force...
+buffer: Instance 50
+numCustomers: 10
+numProducts: 6
+0 1 0 0 1 0 
+1 1 1 1 1 0 
+1 1 1 1 0 0 
+0 1 0 1 1 1 
+1 1 1 0 1 0 
+1 0 0 1 0 1 
+1 1 1 1 1 1 
+0 1 0 1 1 1 
+1 1 1 1 1 1 
+1 1 1 1 1 1 
+numSequences: 720
+minStacks: 11
+Best sequence:
+5 0 0 2 3 4 
+0 0 0 0 0 1 
+0 1 1 1 1 1 
+0 1 1 1 1 0 
+1 0 0 0 1 1 
+0 1 1 1 0 1 
+1 1 1 0 1 0 
+1 1 1 1 1 1 
+1 0 0 0 1 1 
+1 1 1 1 1 1 
+1 1 1 1 1 1 
+Open stacks: 9

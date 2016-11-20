@@ -1,0 +1,286 @@
+Solving by Dynamic Programming...
+buffer: Instance 20
+numCustomers: 10
+numProducts: 3
+1 1 0 
+0 1 0 
+1 1 1 
+1 1 1 
+1 1 1 
+0 1 1 
+1 1 0 
+1 1 1 
+0 0 1 
+1 0 1 
+Best sequence:
+1 0 2 
+1 1 0 
+1 0 0 
+1 1 1 
+1 1 1 
+1 1 1 
+1 0 1 
+1 1 0 
+1 1 1 
+0 0 1 
+0 1 1 
+OpenStacks: 8
+Took 0.77 seconds
+
+buffer: Instance 21
+numCustomers: 10
+numProducts: 3
+1 1 1 
+1 0 1 
+1 1 1 
+0 1 1 
+1 1 1 
+1 0 1 
+1 0 1 
+1 1 1 
+0 1 1 
+1 0 0 
+Best sequence:
+0 1 2 
+1 1 1 
+1 0 1 
+1 1 1 
+0 1 1 
+1 1 1 
+1 0 1 
+1 0 1 
+1 1 1 
+0 1 1 
+1 0 0 
+OpenStacks: 9
+Took 0 seconds
+
+buffer: Instance 22
+numCustomers: 10
+numProducts: 3
+1 1 1 
+0 1 1 
+1 0 1 
+0 0 1 
+0 1 1 
+1 1 1 
+1 1 1 
+1 0 1 
+1 1 1 
+0 1 1 
+Best sequence:
+0 1 2 
+1 1 1 
+0 1 1 
+1 0 1 
+0 0 1 
+0 1 1 
+1 1 1 
+1 1 1 
+1 0 1 
+1 1 1 
+0 1 1 
+OpenStacks: 10
+Took 0 seconds
+
+buffer: Instance 23
+numCustomers: 10
+numProducts: 3
+1 0 1 
+1 0 1 
+0 1 1 
+1 1 0 
+1 1 1 
+1 0 1 
+1 0 0 
+1 0 1 
+0 1 1 
+0 1 0 
+Best sequence:
+0 2 1 
+1 1 0 
+1 1 0 
+0 1 1 
+1 0 1 
+1 1 1 
+1 1 0 
+1 0 0 
+1 1 0 
+0 1 1 
+0 0 1 
+OpenStacks: 8
+Took 0 seconds
+
+buffer: Instance 24
+numCustomers: 10
+numProducts: 3
+1 1 1 
+1 1 1 
+1 1 1 
+1 1 1 
+1 1 1 
+1 1 1 
+0 1 0 
+1 1 1 
+1 0 1 
+1 1 1 
+Best sequence:
+0 2 1 
+1 1 1 
+1 1 1 
+1 1 1 
+1 1 1 
+1 1 1 
+1 1 1 
+0 0 1 
+1 1 1 
+1 1 0 
+1 1 1 
+OpenStacks: 9
+Took 0 seconds
+
+buffer: Instance 25
+numCustomers: 10
+numProducts: 3
+0 0 1 
+1 1 1 
+1 1 1 
+0 0 1 
+1 0 1 
+1 1 1 
+1 1 1 
+1 1 1 
+0 1 0 
+1 1 1 
+Best sequence:
+0 1 2 
+0 0 1 
+1 1 1 
+1 1 1 
+0 0 1 
+1 0 1 
+1 1 1 
+1 1 1 
+1 1 1 
+0 1 0 
+1 1 1 
+OpenStacks: 9
+Took 0 seconds
+
+buffer: Instance 26
+numCustomers: 10
+numProducts: 3
+1 0 1 
+0 0 1 
+1 1 1 
+1 0 0 
+0 0 0 
+0 0 0 
+1 1 0 
+1 1 1 
+1 0 1 
+0 1 1 
+Best sequence:
+0 1 2 
+1 0 1 
+0 0 1 
+1 1 1 
+1 0 0 
+0 0 0 
+0 0 0 
+1 1 0 
+1 1 1 
+1 0 1 
+0 1 1 
+OpenStacks: 6
+Took 0 seconds
+
+buffer: Instance 27
+numCustomers: 10
+numProducts: 3
+1 1 1 
+1 1 0 
+0 1 0 
+1 1 0 
+1 1 1 
+1 1 1 
+1 1 1 
+0 0 0 
+1 1 0 
+1 1 1 
+Best sequence:
+0 1 2 
+1 1 1 
+1 1 0 
+0 1 0 
+1 1 0 
+1 1 1 
+1 1 1 
+1 1 1 
+0 0 0 
+1 1 0 
+1 1 1 
+OpenStacks: 9
+Took 0 seconds
+
+buffer: Instance 28
+numCustomers: 10
+numProducts: 3
+0 1 1 
+1 1 1 
+1 1 1 
+1 1 0 
+1 1 1 
+1 1 1 
+0 0 0 
+1 1 1 
+1 1 1 
+1 1 1 
+Best sequence:
+0 1 2 
+0 1 1 
+1 1 1 
+1 1 1 
+1 1 0 
+1 1 1 
+1 1 1 
+0 0 0 
+1 1 1 
+1 1 1 
+1 1 1 
+OpenStacks: 9
+Took 0 seconds
+
+buffer: Instance 29
+numCustomers: 10
+numProducts: 3
+1 1 1 
+0 1 0 
+1 0 1 
+0 1 1 
+0 1 1 
+0 1 1 
+1 1 1 
+1 1 1 
+1 0 1 
+1 1 1 
+Best sequence:
+0 2 1 
+1 1 1 
+0 0 1 
+1 1 0 
+0 1 1 
+0 1 1 
+0 1 1 
+1 1 1 
+1 1 1 
+1 1 0 
+1 1 1 
+OpenStacks: 9
+Took 0 seconds
+
+Solved: 10 instances
+totalTime: 0.77 seconds
+minTime: 0 seconds
+maxTime: 0.77 seconds
+Average: 0.077 seconds
