@@ -101,8 +101,8 @@ int maximumOpenStacks(int* sequence,
         }
     }
 
-    free(toDo);
     free(done);
+    free(toDo);
 
     return numOpenStacks;
 }
@@ -161,7 +161,7 @@ void bruteForceSolve(int* orders,
     int* stackSizes = (int*) malloc(sizeStacksSizes);
     int minStacks = numCustomers + 1;
     int bestK = -1;
-    for (int i = 0; i < ceil(numSequences/NUM_BLOCKS); i++) {
+    for (int i = 0; i < ceil(1.0 * numSequences/NUM_BLOCKS); i++) {
         int numSequencesToProcess;
         if (numSequences - i * NUM_BLOCKS >= NUM_BLOCKS)
             numSequencesToProcess = NUM_BLOCKS;
