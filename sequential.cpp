@@ -97,21 +97,16 @@ void bruteForceSolve(vector<vector<int>>& orders,
     vector<vector<int>> sequences(numSequences);
     for (int i = 0; i < numSequences; i++) {
         sequences[i] = generateSequence(i, numProducts);
-        // for (int j : sequences[i])
-        //     cout << j << " ";
-        // cout << endl;
     }
 
     // Calculate the maximum number of open stacks for each sequence
     vector<int> stackSizes(numSequences);
     for (int i = 0; i < numSequences; i++) {
         stackSizes[i] = maximumOpenStacks(sequences[i],
-                                      orders,
-                                      numCustomers,
-                                      numProducts);
-        // cout << stackSizes[i] << " ";
+                                          orders,
+                                          numCustomers,
+                                          numProducts);
     }
-    // cout << endl;
 
     // Calculate the global minimum
     int minStacks = numCustomers + 1;
