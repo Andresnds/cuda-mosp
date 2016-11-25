@@ -1,0 +1,118 @@
+andre_10_2_sequential_dp.txt
+Solved: 10 instances
+totalTime: 0 seconds
+minTime: 0 seconds
+maxTime: 0 seconds
+Average: 0 seconds
+
+andre_10_3_sequential_dp.txt
+Solved: 10 instances
+totalTime: 0 seconds
+minTime: 0 seconds
+maxTime: 0 seconds
+Average: 0 seconds
+
+andre_10_4_sequential_dp.txt
+Solved: 10 instances
+totalTime: 0 seconds
+minTime: 0 seconds
+maxTime: 0 seconds
+Average: 0 seconds
+
+andre_10_5_sequential_dp.txt
+Solved: 10 instances
+totalTime: 0.01 seconds
+minTime: 0 seconds
+maxTime: 0.01 seconds
+Average: 0.001 seconds
+
+andre_10_6_sequential_dp.txt
+Solved: 10 instances
+totalTime: 0.01 seconds
+minTime: 0 seconds
+maxTime: 0.01 seconds
+Average: 0.001 seconds
+
+andre_10_7_sequential_dp.txt
+Solved: 10 instances
+totalTime: 0.05 seconds
+minTime: 0 seconds
+maxTime: 0.01 seconds
+Average: 0.005 seconds
+
+andre_10_8_sequential_dp.txt
+Solved: 10 instances
+totalTime: 0.15 seconds
+minTime: 0.01 seconds
+maxTime: 0.02 seconds
+Average: 0.015 seconds
+
+andre_10_9_sequential_dp.txt
+Solved: 10 instances
+totalTime: 0.36 seconds
+minTime: 0.03 seconds
+maxTime: 0.04 seconds
+Average: 0.036 seconds
+
+andre_10_10_sequential_dp.txt
+Solved: 10 instances
+totalTime: 0.87 seconds
+minTime: 0.08 seconds
+maxTime: 0.09 seconds
+Average: 0.087 seconds
+
+andre_10_11_sequential_dp.txt
+Solved: 10 instances
+totalTime: 2.02 seconds
+minTime: 0.2 seconds
+maxTime: 0.21 seconds
+Average: 0.202 seconds
+
+andre_10_12_sequential_dp.txt
+Solved: 10 instances
+totalTime: 4.76 seconds
+minTime: 0.47 seconds
+maxTime: 0.48 seconds
+Average: 0.476 seconds
+
+andre_10_13_sequential_dp.txt
+Solved: 10 instances
+totalTime: 10.89 seconds
+minTime: 1.08 seconds
+maxTime: 1.1 seconds
+Average: 1.089 seconds
+
+andre_10_14_sequential_dp.txt
+Solved: 10 instances
+totalTime: 24.86 seconds
+minTime: 2.46 seconds
+maxTime: 2.5 seconds
+Average: 2.486 seconds
+
+andre_10_15_sequential_dp.txt
+Solved: 10 instances
+totalTime: 56.13 seconds
+minTime: 5.6 seconds
+maxTime: 5.63 seconds
+Average: 5.613 seconds
+
+andre_10_16_sequential_dp.txt
+Solved: 10 instances
+totalTime: 126.44 seconds
+minTime: 12.6 seconds
+maxTime: 12.68 seconds
+Average: 12.644 seconds
+
+andre_10_17_sequential_dp.txt
+Solved: 10 instances
+totalTime: 282.32 seconds
+minTime: 28.16 seconds
+maxTime: 28.37 seconds
+Average: 28.232 seconds
+
+andre_10_18_sequential_dp.txt
+Solved: 10 instances
+totalTime: 626.72 seconds
+minTime: 62.52 seconds
+maxTime: 62.86 seconds
+Average: 62.672 seconds

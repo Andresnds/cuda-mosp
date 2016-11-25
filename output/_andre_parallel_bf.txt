@@ -1,0 +1,90 @@
+andre_10_2_parallel_bf.txt
+Solved: 10 instances
+totalTime: 0.77 seconds
+minTime: 0 seconds
+maxTime: 0.76 seconds
+Average: 0.077 seconds
+
+andre_10_3_parallel_bf.txt
+Solved: 10 instances
+totalTime: 0.87 seconds
+minTime: 0 seconds
+maxTime: 0.87 seconds
+Average: 0.087 seconds
+
+andre_10_4_parallel_bf.txt
+Solved: 10 instances
+totalTime: 0.93 seconds
+minTime: 0 seconds
+maxTime: 0.93 seconds
+Average: 0.093 seconds
+
+andre_10_5_parallel_bf.txt
+Solved: 10 instances
+totalTime: 0.82 seconds
+minTime: 0 seconds
+maxTime: 0.8 seconds
+Average: 0.082 seconds
+
+andre_10_6_parallel_bf.txt
+Solved: 10 instances
+totalTime: 0.75 seconds
+minTime: 0 seconds
+maxTime: 0.71 seconds
+Average: 0.075 seconds
+
+andre_10_7_parallel_bf.txt
+Solved: 10 instances
+totalTime: 1 seconds
+minTime: 0.01 seconds
+maxTime: 0.89 seconds
+Average: 0.1 seconds
+
+andre_10_8_parallel_bf.txt
+Solved: 10 instances
+totalTime: 1.74 seconds
+minTime: 0.08 seconds
+maxTime: 0.96 seconds
+Average: 0.174 seconds
+
+andre_10_9_parallel_bf.txt
+Solved: 10 instances
+totalTime: 8.64 seconds
+minTime: 0.77 seconds
+maxTime: 1.59 seconds
+Average: 0.864 seconds
+
+andre_10_10_parallel_bf.txt
+Solved: 10 instances
+totalTime: 81.72 seconds
+minTime: 8.02 seconds
+maxTime: 9.43 seconds
+Average: 8.172 seconds
+
+andre_10_11_parallel_bf.txt
+Solved: 10 instances
+totalTime: 886.66 seconds
+minTime: 88.36 seconds
+maxTime: 89.38 seconds
+Average: 88.666 seconds
+
+andre_10_12_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+andre_10_13_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+andre_10_14_parallel_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds

@@ -146,6 +146,7 @@ void checkOk(cudaError_t err) {
 void bruteForceSolve(int* orders,
                      int numCustomers,
                      int numProducts) {
+    // Allocate GPU memory
     int* orders_d;
     int sizeOrders = numCustomers * numProducts * sizeof(int);
     checkOk(cudaMalloc((void**) &orders_d, sizeOrders));
@@ -158,6 +159,7 @@ void bruteForceSolve(int* orders,
 
     cout << "numSequences: " << numSequences << endl;
 
+    // Process all sequences
     int* stackSizes = (int*) malloc(sizeStacksSizes);
     int minStacks = numCustomers + 1;
     int bestK = -1;
@@ -168,7 +170,7 @@ void bruteForceSolve(int* orders,
         else
             numSequencesToProcess = numSequences - i * NUM_BLOCKS;
 
-        // Calculating maximum stack for each one of them
+        // Calculating open stacks for each one of them
         calculateMaximumOpenStacks<<<numSequencesToProcess, 1>>>(stackSizes_d,
                                                                  orders_d,
                                                                  numCustomers,
@@ -180,7 +182,7 @@ void bruteForceSolve(int* orders,
                            sizeStacksSizes,
                            cudaMemcpyDeviceToHost));
 
-        // Calculate the global minimum
+        // Calculate the minimum so far
         for (int j = 0; j < numSequencesToProcess; j++) {
             if (stackSizes[j] < minStacks) {
                 minStacks = stackSizes[j];
@@ -188,9 +190,9 @@ void bruteForceSolve(int* orders,
             }
         }
     }
-
     free(stackSizes);
 
+    // Deallocate GPU memory
     checkOk(cudaFree(stackSizes_d));
     checkOk(cudaFree(orders_d));
 

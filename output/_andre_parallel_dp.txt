@@ -1,0 +1,118 @@
+andre_10_2_parallel_dp.txt
+Solved: 10 instances
+totalTime: 0.86 seconds
+minTime: 0 seconds
+maxTime: 0.86 seconds
+Average: 0.086 seconds
+
+andre_10_3_parallel_dp.txt
+Solved: 10 instances
+totalTime: 0.77 seconds
+minTime: 0 seconds
+maxTime: 0.77 seconds
+Average: 0.077 seconds
+
+andre_10_4_parallel_dp.txt
+Solved: 10 instances
+totalTime: 0.94 seconds
+minTime: 0 seconds
+maxTime: 0.92 seconds
+Average: 0.094 seconds
+
+andre_10_5_parallel_dp.txt
+Solved: 10 instances
+totalTime: 0.8 seconds
+minTime: 0 seconds
+maxTime: 0.78 seconds
+Average: 0.08 seconds
+
+andre_10_6_parallel_dp.txt
+Solved: 10 instances
+totalTime: 0.95 seconds
+minTime: 0 seconds
+maxTime: 0.92 seconds
+Average: 0.095 seconds
+
+andre_10_7_parallel_dp.txt
+Solved: 10 instances
+totalTime: 0.83 seconds
+minTime: 0 seconds
+maxTime: 0.78 seconds
+Average: 0.083 seconds
+
+andre_10_8_parallel_dp.txt
+Solved: 10 instances
+totalTime: 0.97 seconds
+minTime: 0 seconds
+maxTime: 0.88 seconds
+Average: 0.097 seconds
+
+andre_10_9_parallel_dp.txt
+Solved: 10 instances
+totalTime: 0.95 seconds
+minTime: 0.01 seconds
+maxTime: 0.8 seconds
+Average: 0.095 seconds
+
+andre_10_10_parallel_dp.txt
+Solved: 10 instances
+totalTime: 1.06 seconds
+minTime: 0.02 seconds
+maxTime: 0.83 seconds
+Average: 0.106 seconds
+
+andre_10_11_parallel_dp.txt
+Solved: 10 instances
+totalTime: 1.29 seconds
+minTime: 0.03 seconds
+maxTime: 0.92 seconds
+Average: 0.129 seconds
+
+andre_10_12_parallel_dp.txt
+Solved: 10 instances
+totalTime: 1.63 seconds
+minTime: 0.07 seconds
+maxTime: 0.96 seconds
+Average: 0.163 seconds
+
+andre_10_13_parallel_dp.txt
+Solved: 10 instances
+totalTime: 2.23 seconds
+minTime: 0.13 seconds
+maxTime: 0.97 seconds
+Average: 0.223 seconds
+
+andre_10_14_parallel_dp.txt
+Solved: 10 instances
+totalTime: 3.68 seconds
+minTime: 0.27 seconds
+maxTime: 1.18 seconds
+Average: 0.368 seconds
+
+andre_10_15_parallel_dp.txt
+Solved: 10 instances
+totalTime: 6.59 seconds
+minTime: 0.56 seconds
+maxTime: 1.48 seconds
+Average: 0.659 seconds
+
+andre_10_16_parallel_dp.txt
+Solved: 10 instances
+totalTime: 12.57 seconds
+minTime: 1.18 seconds
+maxTime: 1.9 seconds
+Average: 1.257 seconds
+
+andre_10_17_parallel_dp.txt
+Solved: 10 instances
+totalTime: 25.87 seconds
+minTime: 2.49 seconds
+maxTime: 3.32 seconds
+Average: 2.587 seconds
+
+andre_10_18_parallel_dp.txt
+Solved: 10 instances
+totalTime: 53.93 seconds
+minTime: 5.29 seconds
+maxTime: 6.18 seconds
+Average: 5.393 seconds

@@ -117,6 +117,8 @@ void bruteForceSolve(vector<vector<int>>& orders,
             bestI = i;
         }
     }
+
+    // Print result
     printOrdersInSequence(sequences[bestI], orders, numCustomers, numProducts);
     cout << "OpenStacks: " << minStacks << endl;
 }
@@ -220,10 +222,6 @@ tuple<int, vector<int>> stacks(vector<bool>* s,
                     s, orders, numCustomers, numProducts);
             int after = get<0>(after_sol);
             vector<int> sol = get<1>(after_sol);
-            // cout << endl << "For set " << p << ", ";
-            // printSet(s, numProducts);
-            // cout << endl << "active: " << active << " after: " << after
-            //      << endl;
             int max = (active > after) ? active : after;
             if (max < min_stacks){
                 min_stacks = max;
@@ -233,9 +231,6 @@ tuple<int, vector<int>> stacks(vector<bool>* s,
             (*s)[p] = true;
         }
     }
-    // cout << endl << "Calculating set ";
-    // printSet(s, numProducts);
-    // cout << endl << "min_stacks: " << min_stacks << endl;
 
     setCache(s, min_stacks, solution);
     return getCache(s);

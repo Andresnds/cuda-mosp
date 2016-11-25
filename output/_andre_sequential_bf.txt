@@ -1,0 +1,83 @@
+andre_10_2_sequential_bf.txt
+Solved: 10 instances
+totalTime: 0 seconds
+minTime: 0 seconds
+maxTime: 0 seconds
+Average: 0 seconds
+
+andre_10_3_sequential_bf.txt
+Solved: 10 instances
+totalTime: 0 seconds
+minTime: 0 seconds
+maxTime: 0 seconds
+Average: 0 seconds
+
+andre_10_4_sequential_bf.txt
+Solved: 10 instances
+totalTime: 0 seconds
+minTime: 0 seconds
+maxTime: 0 seconds
+Average: 0 seconds
+
+andre_10_5_sequential_bf.txt
+Solved: 10 instances
+totalTime: 0 seconds
+minTime: 0 seconds
+maxTime: 0 seconds
+Average: 0 seconds
+
+andre_10_6_sequential_bf.txt
+Solved: 10 instances
+totalTime: 0.02 seconds
+minTime: 0 seconds
+maxTime: 0.01 seconds
+Average: 0.002 seconds
+
+andre_10_7_sequential_bf.txt
+Solved: 10 instances
+totalTime: 0.22 seconds
+minTime: 0.02 seconds
+maxTime: 0.03 seconds
+Average: 0.022 seconds
+
+andre_10_8_sequential_bf.txt
+Solved: 10 instances
+totalTime: 1.98 seconds
+minTime: 0.19 seconds
+maxTime: 0.21 seconds
+Average: 0.198 seconds
+
+andre_10_9_sequential_bf.txt
+Solved: 10 instances
+totalTime: 19.43 seconds
+minTime: 1.91 seconds
+maxTime: 1.97 seconds
+Average: 1.943 seconds
+
+andre_10_10_sequential_bf.txt
+Solved: 10 instances
+totalTime: 213.3 seconds
+minTime: 21.12 seconds
+maxTime: 21.47 seconds
+Average: 21.33 seconds
+
+andre_10_11_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+andre_10_12_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
+
+andre_10_13_sequential_bf.txt
+Solved: -1 instances
+totalTime: -1 seconds
+minTime: -1 seconds
+maxTime: -1 seconds
+Average: -1 seconds
